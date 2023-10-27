@@ -15,16 +15,25 @@ struct ButtonComponent: View {
     var text: String
     var action: (() -> Void)?
     var destination: AnyView?
+    var width: CGFloat
+    var height: CGFloat
+    var corner: CGFloat
     // MARK: Initialization
 
     init(
         text: String,
         action: (() -> Void)? = nil,
-        destination: AnyView? = nil
+        destination: AnyView? = nil,
+        width: CGFloat,
+        height: CGFloat,
+        corner: CGFloat
     ) {
         self.text = text
         self.action = action
         self.destination = destination
+        self.width = width
+        self.height = height
+        self.corner = corner
     }
     // MARK: Body
 
@@ -34,11 +43,11 @@ struct ButtonComponent: View {
                 Button {
                     action()
                 } label: {
-                    createButton(text: text)
+                    createButton(text: text, width: width, height: height, corner: corner)
                 }
             } else if let destination = destination {
                 NavigationLink(destination: destination) {
-                    createButton(text: text)
+                    createButton(text: text, width: width, height: height, corner: corner)
                 }
             }
         }
@@ -46,11 +55,11 @@ struct ButtonComponent: View {
     // MARK: - Private Methods
 
     @ViewBuilder
-    private func createButton(text: String) -> some View {
+    private func createButton(text: String, width: CGFloat, height: CGFloat, corner: CGFloat) -> some View {
         ZStack {
             Color.red
-                .frame(maxWidth: 200, maxHeight: 40)
-                .cornerRadius(10)
+                .frame(maxWidth: width, maxHeight: height)
+                .cornerRadius(corner)
             Text(text)
                 .foregroundColor(.white)
         }

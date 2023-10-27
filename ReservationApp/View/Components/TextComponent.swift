@@ -15,24 +15,15 @@ struct TextComponent: View {
     var title: String?
     var subTitle: String?
     var text: String?
-    // MARK: Initialization
+    var color: Color?
 
-    init(
-        title: String?,
-        subTitle: String?,
-        text: String?
-    ) {
-        self.title = title
-        self.subTitle = subTitle
-        self.text = text
-    }
     // MARK: Body
 
     var body: some View {
         if let title = title {
             Text(title)
                 .fontWeight(.semibold)
-                .foregroundColor(.red)
+                .foregroundColor(color)
                 .font(.system(size: 32))
         } else if let subTitle = subTitle {
             Text(subTitle)
@@ -40,7 +31,7 @@ struct TextComponent: View {
                 .font(.system(size: 24))
         } else if let text = text {
             Text(text)
-                .fontWeight(.semibold)
+                .fontWeight(.medium)
                 .font(.system(size: 12))
         }
     }
@@ -49,6 +40,6 @@ struct TextComponent: View {
 
 struct TextComponent_Previews: PreviewProvider {
     static var previews: some View {
-        TextComponent(title: "Heading 1", subTitle: "Heading 2", text: "Paragraphe")
+        TextComponent(title: "Heading 1")
     }
 }
