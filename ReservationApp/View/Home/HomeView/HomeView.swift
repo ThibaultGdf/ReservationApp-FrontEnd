@@ -17,6 +17,7 @@ struct  HomeView: View {
     var body: some View {
         VStack {
             TextFieldComponent(text: "Email", width: 200, height: 40)
+            TextComponent(title: nil, subTitle: "bonjour", text: nil)
         }
     }
 }

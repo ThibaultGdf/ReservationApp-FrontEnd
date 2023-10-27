@@ -37,6 +37,7 @@
 		D9A3D62D2AEC300800C0EE20 /* LaunchViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9A3D62C2AEC300800C0EE20 /* LaunchViewModel.swift */; };
 		D9A3D6302AEC30D600C0EE20 /* ButtonComponent.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9A3D62F2AEC30D600C0EE20 /* ButtonComponent.swift */; };
 		D9A3D6322AEC4D7E00C0EE20 /* TextFieldComponent.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9A3D6312AEC4D7E00C0EE20 /* TextFieldComponent.swift */; };
+		D9A3D6342AEC56F100C0EE20 /* TextComponent.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9A3D6332AEC56F100C0EE20 /* TextComponent.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -90,6 +91,7 @@
 		D9A3D62C2AEC300800C0EE20 /* LaunchViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LaunchViewModel.swift; sourceTree = "<group>"; };
 		D9A3D62F2AEC30D600C0EE20 /* ButtonComponent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonComponent.swift; sourceTree = "<group>"; };
 		D9A3D6312AEC4D7E00C0EE20 /* TextFieldComponent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextFieldComponent.swift; sourceTree = "<group>"; };
+		D9A3D6332AEC56F100C0EE20 /* TextComponent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextComponent.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -456,6 +458,7 @@
 			children = (
 				D9A3D62F2AEC30D600C0EE20 /* ButtonComponent.swift */,
 				D9A3D6312AEC4D7E00C0EE20 /* TextFieldComponent.swift */,
+				D9A3D6332AEC56F100C0EE20 /* TextComponent.swift */,
 			);
 			path = Components;
 			sourceTree = "<group>";
@@ -613,6 +616,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D9A3D6342AEC56F100C0EE20 /* TextComponent.swift in Sources */,
 				D9A3D6192AEC2AAB00C0EE20 /* ReservationConfirmationViewModel.swift in Sources */,
 				D9A3D62B2AEC300000C0EE20 /* LaunchView.swift in Sources */,
 				D9A3D5E02AEC217300C0EE20 /* User.swift in Sources */,
