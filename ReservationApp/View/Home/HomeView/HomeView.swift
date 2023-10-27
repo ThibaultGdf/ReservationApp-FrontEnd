@@ -11,11 +11,12 @@ import SwiftUI
 
 struct  HomeView: View {
     // MARK: Properties
-    
+
     // MARK: Body
-    
+
     var body: some View {
         VStack {
+            TextFieldComponent(text: "Email", width: 200, height: 40)
         }
     }
 }
