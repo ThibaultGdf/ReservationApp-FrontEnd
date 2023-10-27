@@ -14,6 +14,8 @@
 		D9A3D5C22AEC1B8300C0EE20 /* ReservationAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9A3D5C12AEC1B8300C0EE20 /* ReservationAppTests.swift */; };
 		D9A3D5CC2AEC1B8300C0EE20 /* ReservationAppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9A3D5CB2AEC1B8300C0EE20 /* ReservationAppUITests.swift */; };
 		D9A3D5CE2AEC1B8300C0EE20 /* ReservationAppUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9A3D5CD2AEC1B8300C0EE20 /* ReservationAppUITestsLaunchTests.swift */; };
+		D9A3D5DE2AEC209A00C0EE20 /* Reservation.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9A3D5DD2AEC209A00C0EE20 /* Reservation.swift */; };
+		D9A3D5E02AEC217300C0EE20 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9A3D5DF2AEC217300C0EE20 /* User.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,6 +46,8 @@
 		D9A3D5C72AEC1B8300C0EE20 /* ReservationAppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ReservationAppUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		D9A3D5CB2AEC1B8300C0EE20 /* ReservationAppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReservationAppUITests.swift; sourceTree = "<group>"; };
 		D9A3D5CD2AEC1B8300C0EE20 /* ReservationAppUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReservationAppUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		D9A3D5DD2AEC209A00C0EE20 /* Reservation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Reservation.swift; sourceTree = "<group>"; };
+		D9A3D5DF2AEC217300C0EE20 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -95,7 +99,9 @@
 			isa = PBXGroup;
 			children = (
 				D9A3D5B02AEC1B8000C0EE20 /* ReservationAppApp.swift */,
-				D9A3D5B22AEC1B8000C0EE20 /* ContentView.swift */,
+				D9A3D5DC2AEC1D5700C0EE20 /* Model */,
+				D9A3D5DA2AEC1D5200C0EE20 /* View */,
+				D9A3D5DB2AEC1D5500C0EE20 /* ViewModel */,
 				D9A3D5B42AEC1B8300C0EE20 /* Assets.xcassets */,
 				D9A3D5B62AEC1B8300C0EE20 /* Preview Content */,
 			);
@@ -125,6 +131,30 @@
 				D9A3D5CD2AEC1B8300C0EE20 /* ReservationAppUITestsLaunchTests.swift */,
 			);
 			path = ReservationAppUITests;
+			sourceTree = "<group>";
+		};
+		D9A3D5DA2AEC1D5200C0EE20 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				D9A3D5B22AEC1B8000C0EE20 /* ContentView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		D9A3D5DB2AEC1D5500C0EE20 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		D9A3D5DC2AEC1D5700C0EE20 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				D9A3D5DD2AEC209A00C0EE20 /* Reservation.swift */,
+				D9A3D5DF2AEC217300C0EE20 /* User.swift */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -257,8 +287,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D9A3D5E02AEC217300C0EE20 /* User.swift in Sources */,
 				D9A3D5B32AEC1B8000C0EE20 /* ContentView.swift in Sources */,
 				D9A3D5B12AEC1B8000C0EE20 /* ReservationAppApp.swift in Sources */,
+				D9A3D5DE2AEC209A00C0EE20 /* Reservation.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
