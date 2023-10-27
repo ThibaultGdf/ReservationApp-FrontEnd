@@ -11,7 +11,7 @@ import Foundation
 
 struct Reservation: Identifiable {
     // MARK: Properties
-    
+
     let id = UUID()
     var nameOfReservation: String
     var date = Date()
@@ -19,7 +19,7 @@ struct Reservation: Identifiable {
     var numberOfPersons: Int
     var description: String
     // MARK: Initialization
-    
+
     init(
         nameOfReservation: String,
         date: Date = Date(),

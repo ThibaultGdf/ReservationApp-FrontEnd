@@ -11,7 +11,7 @@ import Foundation
 
 struct User: Identifiable {
     // MARK: Properties
-    
+
     let id = UUID()
     var firstName: String
     var lastName: String
@@ -20,7 +20,7 @@ struct User: Identifiable {
     var password: String
     var confirmationPassword: String
     // MARK: Initialization
-    
+
     init(
         firstName: String,
         lastName: String,

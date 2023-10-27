@@ -5,6 +5,8 @@
 //  Created by Thibault GODEFROY on 27/10/2023.
 //
 
+// swiftlint:disable line_length
+
 import XCTest
 
 final class ReservationAppUITests: XCTestCase {
@@ -39,3 +41,5 @@ final class ReservationAppUITests: XCTestCase {
         }
     }
 }
+
+// swiftlint:enable line_length
