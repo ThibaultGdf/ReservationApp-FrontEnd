@@ -1,0 +1,588 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		D9A3D5B12AEC1B8000C0EE20 /* ReservationAppApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9A3D5B02AEC1B8000C0EE20 /* ReservationAppApp.swift */; };
+		D9A3D5B32AEC1B8000C0EE20 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9A3D5B22AEC1B8000C0EE20 /* ContentView.swift */; };
+		D9A3D5B52AEC1B8300C0EE20 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D9A3D5B42AEC1B8300C0EE20 /* Assets.xcassets */; };
+		D9A3D5B82AEC1B8300C0EE20 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D9A3D5B72AEC1B8300C0EE20 /* Preview Assets.xcassets */; };
+		D9A3D5C22AEC1B8300C0EE20 /* ReservationAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9A3D5C12AEC1B8300C0EE20 /* ReservationAppTests.swift */; };
+		D9A3D5CC2AEC1B8300C0EE20 /* ReservationAppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9A3D5CB2AEC1B8300C0EE20 /* ReservationAppUITests.swift */; };
+		D9A3D5CE2AEC1B8300C0EE20 /* ReservationAppUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9A3D5CD2AEC1B8300C0EE20 /* ReservationAppUITestsLaunchTests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		D9A3D5BE2AEC1B8300C0EE20 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D9A3D5A52AEC1B8000C0EE20 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D9A3D5AC2AEC1B8000C0EE20;
+			remoteInfo = ReservationApp;
+		};
+		D9A3D5C82AEC1B8300C0EE20 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D9A3D5A52AEC1B8000C0EE20 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D9A3D5AC2AEC1B8000C0EE20;
+			remoteInfo = ReservationApp;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		D9A3D5AD2AEC1B8000C0EE20 /* ReservationApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ReservationApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		D9A3D5B02AEC1B8000C0EE20 /* ReservationAppApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReservationAppApp.swift; sourceTree = "<group>"; };
+		D9A3D5B22AEC1B8000C0EE20 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		D9A3D5B42AEC1B8300C0EE20 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		D9A3D5B72AEC1B8300C0EE20 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		D9A3D5BD2AEC1B8300C0EE20 /* ReservationAppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ReservationAppTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		D9A3D5C12AEC1B8300C0EE20 /* ReservationAppTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReservationAppTests.swift; sourceTree = "<group>"; };
+		D9A3D5C72AEC1B8300C0EE20 /* ReservationAppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ReservationAppUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		D9A3D5CB2AEC1B8300C0EE20 /* ReservationAppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReservationAppUITests.swift; sourceTree = "<group>"; };
+		D9A3D5CD2AEC1B8300C0EE20 /* ReservationAppUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReservationAppUITestsLaunchTests.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		D9A3D5AA2AEC1B8000C0EE20 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D9A3D5BA2AEC1B8300C0EE20 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D9A3D5C42AEC1B8300C0EE20 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		D9A3D5A42AEC1B8000C0EE20 = {
+			isa = PBXGroup;
+			children = (
+				D9A3D5AF2AEC1B8000C0EE20 /* ReservationApp */,
+				D9A3D5C02AEC1B8300C0EE20 /* ReservationAppTests */,
+				D9A3D5CA2AEC1B8300C0EE20 /* ReservationAppUITests */,
+				D9A3D5AE2AEC1B8000C0EE20 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		D9A3D5AE2AEC1B8000C0EE20 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				D9A3D5AD2AEC1B8000C0EE20 /* ReservationApp.app */,
+				D9A3D5BD2AEC1B8300C0EE20 /* ReservationAppTests.xctest */,
+				D9A3D5C72AEC1B8300C0EE20 /* ReservationAppUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		D9A3D5AF2AEC1B8000C0EE20 /* ReservationApp */ = {
+			isa = PBXGroup;
+			children = (
+				D9A3D5B02AEC1B8000C0EE20 /* ReservationAppApp.swift */,
+				D9A3D5B22AEC1B8000C0EE20 /* ContentView.swift */,
+				D9A3D5B42AEC1B8300C0EE20 /* Assets.xcassets */,
+				D9A3D5B62AEC1B8300C0EE20 /* Preview Content */,
+			);
+			path = ReservationApp;
+			sourceTree = "<group>";
+		};
+		D9A3D5B62AEC1B8300C0EE20 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				D9A3D5B72AEC1B8300C0EE20 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		D9A3D5C02AEC1B8300C0EE20 /* ReservationAppTests */ = {
+			isa = PBXGroup;
+			children = (
+				D9A3D5C12AEC1B8300C0EE20 /* ReservationAppTests.swift */,
+			);
+			path = ReservationAppTests;
+			sourceTree = "<group>";
+		};
+		D9A3D5CA2AEC1B8300C0EE20 /* ReservationAppUITests */ = {
+			isa = PBXGroup;
+			children = (
+				D9A3D5CB2AEC1B8300C0EE20 /* ReservationAppUITests.swift */,
+				D9A3D5CD2AEC1B8300C0EE20 /* ReservationAppUITestsLaunchTests.swift */,
+			);
+			path = ReservationAppUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		D9A3D5AC2AEC1B8000C0EE20 /* ReservationApp */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D9A3D5D12AEC1B8300C0EE20 /* Build configuration list for PBXNativeTarget "ReservationApp" */;
+			buildPhases = (
+				D9A3D5A92AEC1B8000C0EE20 /* Sources */,
+				D9A3D5AA2AEC1B8000C0EE20 /* Frameworks */,
+				D9A3D5AB2AEC1B8000C0EE20 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ReservationApp;
+			productName = ReservationApp;
+			productReference = D9A3D5AD2AEC1B8000C0EE20 /* ReservationApp.app */;
+			productType = "com.apple.product-type.application";
+		};
+		D9A3D5BC2AEC1B8300C0EE20 /* ReservationAppTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D9A3D5D42AEC1B8300C0EE20 /* Build configuration list for PBXNativeTarget "ReservationAppTests" */;
+			buildPhases = (
+				D9A3D5B92AEC1B8300C0EE20 /* Sources */,
+				D9A3D5BA2AEC1B8300C0EE20 /* Frameworks */,
+				D9A3D5BB2AEC1B8300C0EE20 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				D9A3D5BF2AEC1B8300C0EE20 /* PBXTargetDependency */,
+			);
+			name = ReservationAppTests;
+			productName = ReservationAppTests;
+			productReference = D9A3D5BD2AEC1B8300C0EE20 /* ReservationAppTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		D9A3D5C62AEC1B8300C0EE20 /* ReservationAppUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D9A3D5D72AEC1B8300C0EE20 /* Build configuration list for PBXNativeTarget "ReservationAppUITests" */;
+			buildPhases = (
+				D9A3D5C32AEC1B8300C0EE20 /* Sources */,
+				D9A3D5C42AEC1B8300C0EE20 /* Frameworks */,
+				D9A3D5C52AEC1B8300C0EE20 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				D9A3D5C92AEC1B8300C0EE20 /* PBXTargetDependency */,
+			);
+			name = ReservationAppUITests;
+			productName = ReservationAppUITests;
+			productReference = D9A3D5C72AEC1B8300C0EE20 /* ReservationAppUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D9A3D5A52AEC1B8000C0EE20 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1420;
+				LastUpgradeCheck = 1420;
+				TargetAttributes = {
+					D9A3D5AC2AEC1B8000C0EE20 = {
+						CreatedOnToolsVersion = 14.2;
+					};
+					D9A3D5BC2AEC1B8300C0EE20 = {
+						CreatedOnToolsVersion = 14.2;
+						TestTargetID = D9A3D5AC2AEC1B8000C0EE20;
+					};
+					D9A3D5C62AEC1B8300C0EE20 = {
+						CreatedOnToolsVersion = 14.2;
+						TestTargetID = D9A3D5AC2AEC1B8000C0EE20;
+					};
+				};
+			};
+			buildConfigurationList = D9A3D5A82AEC1B8000C0EE20 /* Build configuration list for PBXProject "ReservationApp" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = D9A3D5A42AEC1B8000C0EE20;
+			productRefGroup = D9A3D5AE2AEC1B8000C0EE20 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				D9A3D5AC2AEC1B8000C0EE20 /* ReservationApp */,
+				D9A3D5BC2AEC1B8300C0EE20 /* ReservationAppTests */,
+				D9A3D5C62AEC1B8300C0EE20 /* ReservationAppUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		D9A3D5AB2AEC1B8000C0EE20 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D9A3D5B82AEC1B8300C0EE20 /* Preview Assets.xcassets in Resources */,
+				D9A3D5B52AEC1B8300C0EE20 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D9A3D5BB2AEC1B8300C0EE20 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D9A3D5C52AEC1B8300C0EE20 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		D9A3D5A92AEC1B8000C0EE20 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D9A3D5B32AEC1B8000C0EE20 /* ContentView.swift in Sources */,
+				D9A3D5B12AEC1B8000C0EE20 /* ReservationAppApp.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D9A3D5B92AEC1B8300C0EE20 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D9A3D5C22AEC1B8300C0EE20 /* ReservationAppTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D9A3D5C32AEC1B8300C0EE20 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D9A3D5CC2AEC1B8300C0EE20 /* ReservationAppUITests.swift in Sources */,
+				D9A3D5CE2AEC1B8300C0EE20 /* ReservationAppUITestsLaunchTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		D9A3D5BF2AEC1B8300C0EE20 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = D9A3D5AC2AEC1B8000C0EE20 /* ReservationApp */;
+			targetProxy = D9A3D5BE2AEC1B8300C0EE20 /* PBXContainerItemProxy */;
+		};
+		D9A3D5C92AEC1B8300C0EE20 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = D9A3D5AC2AEC1B8000C0EE20 /* ReservationApp */;
+			targetProxy = D9A3D5C82AEC1B8300C0EE20 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		D9A3D5CF2AEC1B8300C0EE20 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		D9A3D5D02AEC1B8300C0EE20 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		D9A3D5D22AEC1B8300C0EE20 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"ReservationApp/Preview Content\"";
+				DEVELOPMENT_TEAM = MG8DTPV84D;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = ThibaultGodefroy.ReservationApp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		D9A3D5D32AEC1B8300C0EE20 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"ReservationApp/Preview Content\"";
+				DEVELOPMENT_TEAM = MG8DTPV84D;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = ThibaultGodefroy.ReservationApp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		D9A3D5D52AEC1B8300C0EE20 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = MG8DTPV84D;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = ThibaultGodefroy.ReservationAppTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ReservationApp.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/ReservationApp";
+			};
+			name = Debug;
+		};
+		D9A3D5D62AEC1B8300C0EE20 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = MG8DTPV84D;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = ThibaultGodefroy.ReservationAppTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ReservationApp.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/ReservationApp";
+			};
+			name = Release;
+		};
+		D9A3D5D82AEC1B8300C0EE20 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = MG8DTPV84D;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = ThibaultGodefroy.ReservationAppUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = ReservationApp;
+			};
+			name = Debug;
+		};
+		D9A3D5D92AEC1B8300C0EE20 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = MG8DTPV84D;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = ThibaultGodefroy.ReservationAppUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = ReservationApp;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		D9A3D5A82AEC1B8000C0EE20 /* Build configuration list for PBXProject "ReservationApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D9A3D5CF2AEC1B8300C0EE20 /* Debug */,
+				D9A3D5D02AEC1B8300C0EE20 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D9A3D5D12AEC1B8300C0EE20 /* Build configuration list for PBXNativeTarget "ReservationApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D9A3D5D22AEC1B8300C0EE20 /* Debug */,
+				D9A3D5D32AEC1B8300C0EE20 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D9A3D5D42AEC1B8300C0EE20 /* Build configuration list for PBXNativeTarget "ReservationAppTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D9A3D5D52AEC1B8300C0EE20 /* Debug */,
+				D9A3D5D62AEC1B8300C0EE20 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D9A3D5D72AEC1B8300C0EE20 /* Build configuration list for PBXNativeTarget "ReservationAppUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D9A3D5D82AEC1B8300C0EE20 /* Debug */,
+				D9A3D5D92AEC1B8300C0EE20 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = D9A3D5A52AEC1B8000C0EE20 /* Project object */;
+}
