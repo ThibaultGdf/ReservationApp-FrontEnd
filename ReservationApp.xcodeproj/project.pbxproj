@@ -33,6 +33,9 @@
 		D9A3D61B2AEC2AD100C0EE20 /* AccountViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9A3D61A2AEC2AD100C0EE20 /* AccountViewModel.swift */; };
 		D9A3D6202AEC2B1100C0EE20 /* ReservationListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9A3D61F2AEC2B1100C0EE20 /* ReservationListViewModel.swift */; };
 		D9A3D6252AEC2B6000C0EE20 /* ReservationEditViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9A3D6242AEC2B6000C0EE20 /* ReservationEditViewModel.swift */; };
+		D9A3D62B2AEC300000C0EE20 /* LaunchView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9A3D62A2AEC300000C0EE20 /* LaunchView.swift */; };
+		D9A3D62D2AEC300800C0EE20 /* LaunchViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9A3D62C2AEC300800C0EE20 /* LaunchViewModel.swift */; };
+		D9A3D6302AEC30D600C0EE20 /* ButtonComponent.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9A3D62F2AEC30D600C0EE20 /* ButtonComponent.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -82,6 +85,9 @@
 		D9A3D61A2AEC2AD100C0EE20 /* AccountViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountViewModel.swift; sourceTree = "<group>"; };
 		D9A3D61F2AEC2B1100C0EE20 /* ReservationListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReservationListViewModel.swift; sourceTree = "<group>"; };
 		D9A3D6242AEC2B6000C0EE20 /* ReservationEditViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReservationEditViewModel.swift; sourceTree = "<group>"; };
+		D9A3D62A2AEC300000C0EE20 /* LaunchView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LaunchView.swift; sourceTree = "<group>"; };
+		D9A3D62C2AEC300800C0EE20 /* LaunchViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LaunchViewModel.swift; sourceTree = "<group>"; };
+		D9A3D62F2AEC30D600C0EE20 /* ButtonComponent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonComponent.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -169,6 +175,8 @@
 		D9A3D5DA2AEC1D5200C0EE20 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				D9A3D62E2AEC30BF00C0EE20 /* Components */,
+				D9A3D6272AEC2FCF00C0EE20 /* Launch */,
 				D9A3D5F32AEC277100C0EE20 /* Home */,
 				D9A3D5F82AEC290500C0EE20 /* SignIn */,
 				D9A3D6012AEC295200C0EE20 /* SignUp */,
@@ -416,6 +424,39 @@
 			path = ReservationEditViewModel;
 			sourceTree = "<group>";
 		};
+		D9A3D6272AEC2FCF00C0EE20 /* Launch */ = {
+			isa = PBXGroup;
+			children = (
+				D9A3D6282AEC2FED00C0EE20 /* LaunchView */,
+				D9A3D6292AEC2FF300C0EE20 /* LaunchViewModel */,
+			);
+			path = Launch;
+			sourceTree = "<group>";
+		};
+		D9A3D6282AEC2FED00C0EE20 /* LaunchView */ = {
+			isa = PBXGroup;
+			children = (
+				D9A3D62A2AEC300000C0EE20 /* LaunchView.swift */,
+			);
+			path = LaunchView;
+			sourceTree = "<group>";
+		};
+		D9A3D6292AEC2FF300C0EE20 /* LaunchViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				D9A3D62C2AEC300800C0EE20 /* LaunchViewModel.swift */,
+			);
+			path = LaunchViewModel;
+			sourceTree = "<group>";
+		};
+		D9A3D62E2AEC30BF00C0EE20 /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				D9A3D62F2AEC30D600C0EE20 /* ButtonComponent.swift */,
+			);
+			path = Components;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -426,6 +467,7 @@
 				D9A3D5A92AEC1B8000C0EE20 /* Sources */,
 				D9A3D5AA2AEC1B8000C0EE20 /* Frameworks */,
 				D9A3D5AB2AEC1B8000C0EE20 /* Resources */,
+				D9A3D6262AEC2EA400C0EE20 /* Swift-Lint */,
 			);
 			buildRules = (
 			);
@@ -541,19 +583,44 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		D9A3D6262AEC2EA400C0EE20 /* Swift-Lint */ = {
+			isa = PBXShellScriptBuildPhase;
+			alwaysOutOfDate = 1;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			name = "Swift-Lint";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Type a script or drag a script file from your workspace to insert its path.\nif [[ \"$(uname -m)\" == arm64 ]]; then\n    export PATH=\"/opt/homebrew/bin:$PATH\"\nfi\n\nif which swiftlint > /dev/null; then\n  swiftlint\nelse\n  echo \"warning: SwiftLint not installed, download from https://github.com/realm/SwiftLint\"\nfi\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		D9A3D5A92AEC1B8000C0EE20 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				D9A3D6192AEC2AAB00C0EE20 /* ReservationConfirmationViewModel.swift in Sources */,
+				D9A3D62B2AEC300000C0EE20 /* LaunchView.swift in Sources */,
 				D9A3D5E02AEC217300C0EE20 /* User.swift in Sources */,
 				D9A3D6252AEC2B6000C0EE20 /* ReservationEditViewModel.swift in Sources */,
 				D9A3D60D2AEC29DF00C0EE20 /* SignUpViewModel.swift in Sources */,
 				D9A3D5B32AEC1B8000C0EE20 /* HomeView.swift in Sources */,
 				D9A3D6172AEC2A9900C0EE20 /* ReservationConfirmationView.swift in Sources */,
+				D9A3D6302AEC30D600C0EE20 /* ButtonComponent.swift in Sources */,
 				D9A3D5B12AEC1B8000C0EE20 /* ReservationAppApp.swift in Sources */,
 				D9A3D5EC2AEC273C00C0EE20 /* AccountView.swift in Sources */,
+				D9A3D62D2AEC300800C0EE20 /* LaunchViewModel.swift in Sources */,
 				D9A3D6112AEC2A0600C0EE20 /* PasswordForgottenViewModel.swift in Sources */,
 				D9A3D6132AEC2A6B00C0EE20 /* PasswordNewView.swift in Sources */,
 				D9A3D5F22AEC275B00C0EE20 /* ReservationEditView.swift in Sources */,
