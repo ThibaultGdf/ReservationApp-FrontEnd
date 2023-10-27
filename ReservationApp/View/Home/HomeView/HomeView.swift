@@ -7,16 +7,22 @@
 
 import SwiftUI
 
-//MARK: - 
-struct ContentView: View {
+// MARK: - HomeView
+
+struct  HomeView: View {
+    // MARK: Properties
+    
+    // MARK: Body
+    
     var body: some View {
         VStack {
         }
     }
 }
+// MARK: - Preview
 
-struct ContentView_Previews: PreviewProvider {
+struct  HomeView_Previews: PreviewProvider {
     static var previews: some View {
-        ContentView()
+        HomeView()
     }
 }

@@ -8,7 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		D9A3D5B12AEC1B8000C0EE20 /* ReservationAppApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9A3D5B02AEC1B8000C0EE20 /* ReservationAppApp.swift */; };
-		D9A3D5B32AEC1B8000C0EE20 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9A3D5B22AEC1B8000C0EE20 /* ContentView.swift */; };
+		D9A3D5B32AEC1B8000C0EE20 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9A3D5B22AEC1B8000C0EE20 /* HomeView.swift */; };
 		D9A3D5B52AEC1B8300C0EE20 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D9A3D5B42AEC1B8300C0EE20 /* Assets.xcassets */; };
 		D9A3D5B82AEC1B8300C0EE20 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D9A3D5B72AEC1B8300C0EE20 /* Preview Assets.xcassets */; };
 		D9A3D5C22AEC1B8300C0EE20 /* ReservationAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9A3D5C12AEC1B8300C0EE20 /* ReservationAppTests.swift */; };
@@ -16,6 +16,23 @@
 		D9A3D5CE2AEC1B8300C0EE20 /* ReservationAppUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9A3D5CD2AEC1B8300C0EE20 /* ReservationAppUITestsLaunchTests.swift */; };
 		D9A3D5DE2AEC209A00C0EE20 /* Reservation.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9A3D5DD2AEC209A00C0EE20 /* Reservation.swift */; };
 		D9A3D5E02AEC217300C0EE20 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9A3D5DF2AEC217300C0EE20 /* User.swift */; };
+		D9A3D5E22AEC26FC00C0EE20 /* SignInView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9A3D5E12AEC26FC00C0EE20 /* SignInView.swift */; };
+		D9A3D5E42AEC270A00C0EE20 /* SignUpView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9A3D5E32AEC270A00C0EE20 /* SignUpView.swift */; };
+		D9A3D5EC2AEC273C00C0EE20 /* AccountView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9A3D5EB2AEC273C00C0EE20 /* AccountView.swift */; };
+		D9A3D5F02AEC274E00C0EE20 /* ReservationListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9A3D5EF2AEC274E00C0EE20 /* ReservationListView.swift */; };
+		D9A3D5F22AEC275B00C0EE20 /* ReservationEditView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9A3D5F12AEC275B00C0EE20 /* ReservationEditView.swift */; };
+		D9A3D5F72AEC290100C0EE20 /* HomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9A3D5F62AEC290100C0EE20 /* HomeViewModel.swift */; };
+		D9A3D5FC2AEC292B00C0EE20 /* SignInViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9A3D5FB2AEC292B00C0EE20 /* SignInViewModel.swift */; };
+		D9A3D60D2AEC29DF00C0EE20 /* SignUpViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9A3D60C2AEC29DF00C0EE20 /* SignUpViewModel.swift */; };
+		D9A3D60F2AEC29FC00C0EE20 /* PasswordForgottenView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9A3D60E2AEC29FC00C0EE20 /* PasswordForgottenView.swift */; };
+		D9A3D6112AEC2A0600C0EE20 /* PasswordForgottenViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9A3D6102AEC2A0600C0EE20 /* PasswordForgottenViewModel.swift */; };
+		D9A3D6132AEC2A6B00C0EE20 /* PasswordNewView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9A3D6122AEC2A6B00C0EE20 /* PasswordNewView.swift */; };
+		D9A3D6152AEC2A7800C0EE20 /* PasswordNewViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9A3D6142AEC2A7800C0EE20 /* PasswordNewViewModel.swift */; };
+		D9A3D6172AEC2A9900C0EE20 /* ReservationConfirmationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9A3D6162AEC2A9900C0EE20 /* ReservationConfirmationView.swift */; };
+		D9A3D6192AEC2AAB00C0EE20 /* ReservationConfirmationViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9A3D6182AEC2AAB00C0EE20 /* ReservationConfirmationViewModel.swift */; };
+		D9A3D61B2AEC2AD100C0EE20 /* AccountViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9A3D61A2AEC2AD100C0EE20 /* AccountViewModel.swift */; };
+		D9A3D6202AEC2B1100C0EE20 /* ReservationListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9A3D61F2AEC2B1100C0EE20 /* ReservationListViewModel.swift */; };
+		D9A3D6252AEC2B6000C0EE20 /* ReservationEditViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9A3D6242AEC2B6000C0EE20 /* ReservationEditViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -38,7 +55,7 @@
 /* Begin PBXFileReference section */
 		D9A3D5AD2AEC1B8000C0EE20 /* ReservationApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ReservationApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D9A3D5B02AEC1B8000C0EE20 /* ReservationAppApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReservationAppApp.swift; sourceTree = "<group>"; };
-		D9A3D5B22AEC1B8000C0EE20 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		D9A3D5B22AEC1B8000C0EE20 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
 		D9A3D5B42AEC1B8300C0EE20 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		D9A3D5B72AEC1B8300C0EE20 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		D9A3D5BD2AEC1B8300C0EE20 /* ReservationAppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ReservationAppTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -48,6 +65,23 @@
 		D9A3D5CD2AEC1B8300C0EE20 /* ReservationAppUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReservationAppUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		D9A3D5DD2AEC209A00C0EE20 /* Reservation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Reservation.swift; sourceTree = "<group>"; };
 		D9A3D5DF2AEC217300C0EE20 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		D9A3D5E12AEC26FC00C0EE20 /* SignInView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInView.swift; sourceTree = "<group>"; };
+		D9A3D5E32AEC270A00C0EE20 /* SignUpView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpView.swift; sourceTree = "<group>"; };
+		D9A3D5EB2AEC273C00C0EE20 /* AccountView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountView.swift; sourceTree = "<group>"; };
+		D9A3D5EF2AEC274E00C0EE20 /* ReservationListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReservationListView.swift; sourceTree = "<group>"; };
+		D9A3D5F12AEC275B00C0EE20 /* ReservationEditView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReservationEditView.swift; sourceTree = "<group>"; };
+		D9A3D5F62AEC290100C0EE20 /* HomeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewModel.swift; sourceTree = "<group>"; };
+		D9A3D5FB2AEC292B00C0EE20 /* SignInViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInViewModel.swift; sourceTree = "<group>"; };
+		D9A3D60C2AEC29DF00C0EE20 /* SignUpViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewModel.swift; sourceTree = "<group>"; };
+		D9A3D60E2AEC29FC00C0EE20 /* PasswordForgottenView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PasswordForgottenView.swift; sourceTree = "<group>"; };
+		D9A3D6102AEC2A0600C0EE20 /* PasswordForgottenViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PasswordForgottenViewModel.swift; sourceTree = "<group>"; };
+		D9A3D6122AEC2A6B00C0EE20 /* PasswordNewView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PasswordNewView.swift; sourceTree = "<group>"; };
+		D9A3D6142AEC2A7800C0EE20 /* PasswordNewViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PasswordNewViewModel.swift; sourceTree = "<group>"; };
+		D9A3D6162AEC2A9900C0EE20 /* ReservationConfirmationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReservationConfirmationView.swift; sourceTree = "<group>"; };
+		D9A3D6182AEC2AAB00C0EE20 /* ReservationConfirmationViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReservationConfirmationViewModel.swift; sourceTree = "<group>"; };
+		D9A3D61A2AEC2AD100C0EE20 /* AccountViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountViewModel.swift; sourceTree = "<group>"; };
+		D9A3D61F2AEC2B1100C0EE20 /* ReservationListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReservationListViewModel.swift; sourceTree = "<group>"; };
+		D9A3D6242AEC2B6000C0EE20 /* ReservationEditViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReservationEditViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,7 +135,6 @@
 				D9A3D5B02AEC1B8000C0EE20 /* ReservationAppApp.swift */,
 				D9A3D5DC2AEC1D5700C0EE20 /* Model */,
 				D9A3D5DA2AEC1D5200C0EE20 /* View */,
-				D9A3D5DB2AEC1D5500C0EE20 /* ViewModel */,
 				D9A3D5B42AEC1B8300C0EE20 /* Assets.xcassets */,
 				D9A3D5B62AEC1B8300C0EE20 /* Preview Content */,
 			);
@@ -136,16 +169,17 @@
 		D9A3D5DA2AEC1D5200C0EE20 /* View */ = {
 			isa = PBXGroup;
 			children = (
-				D9A3D5B22AEC1B8000C0EE20 /* ContentView.swift */,
+				D9A3D5F32AEC277100C0EE20 /* Home */,
+				D9A3D5F82AEC290500C0EE20 /* SignIn */,
+				D9A3D6012AEC295200C0EE20 /* SignUp */,
+				D9A3D5FD2AEC293300C0EE20 /* PasswordForgotten */,
+				D9A3D6032AEC295C00C0EE20 /* PasswordNew */,
+				D9A3D6062AEC296E00C0EE20 /* ReservationConfirmation */,
+				D9A3D6092AEC298300C0EE20 /* Account */,
+				D9A3D61C2AEC2AD700C0EE20 /* ReservationList */,
+				D9A3D6212AEC2B2A00C0EE20 /* ReservationEdit */,
 			);
 			path = View;
-			sourceTree = "<group>";
-		};
-		D9A3D5DB2AEC1D5500C0EE20 /* ViewModel */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = ViewModel;
 			sourceTree = "<group>";
 		};
 		D9A3D5DC2AEC1D5700C0EE20 /* Model */ = {
@@ -155,6 +189,231 @@
 				D9A3D5DF2AEC217300C0EE20 /* User.swift */,
 			);
 			path = Model;
+			sourceTree = "<group>";
+		};
+		D9A3D5F32AEC277100C0EE20 /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				D9A3D5F52AEC28F300C0EE20 /* HomeView */,
+				D9A3D5F42AEC28E000C0EE20 /* HomeViewModel */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		D9A3D5F42AEC28E000C0EE20 /* HomeViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				D9A3D5F62AEC290100C0EE20 /* HomeViewModel.swift */,
+			);
+			path = HomeViewModel;
+			sourceTree = "<group>";
+		};
+		D9A3D5F52AEC28F300C0EE20 /* HomeView */ = {
+			isa = PBXGroup;
+			children = (
+				D9A3D5B22AEC1B8000C0EE20 /* HomeView.swift */,
+			);
+			path = HomeView;
+			sourceTree = "<group>";
+		};
+		D9A3D5F82AEC290500C0EE20 /* SignIn */ = {
+			isa = PBXGroup;
+			children = (
+				D9A3D5F92AEC290900C0EE20 /* SignInView */,
+				D9A3D5FA2AEC290E00C0EE20 /* SignInViewModel */,
+			);
+			path = SignIn;
+			sourceTree = "<group>";
+		};
+		D9A3D5F92AEC290900C0EE20 /* SignInView */ = {
+			isa = PBXGroup;
+			children = (
+				D9A3D5E12AEC26FC00C0EE20 /* SignInView.swift */,
+			);
+			path = SignInView;
+			sourceTree = "<group>";
+		};
+		D9A3D5FA2AEC290E00C0EE20 /* SignInViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				D9A3D5FB2AEC292B00C0EE20 /* SignInViewModel.swift */,
+			);
+			path = SignInViewModel;
+			sourceTree = "<group>";
+		};
+		D9A3D5FD2AEC293300C0EE20 /* PasswordForgotten */ = {
+			isa = PBXGroup;
+			children = (
+				D9A3D5FE2AEC293900C0EE20 /* PasswordForgottenView */,
+				D9A3D5FF2AEC294000C0EE20 /* PasswordForgottenViewModel */,
+			);
+			path = PasswordForgotten;
+			sourceTree = "<group>";
+		};
+		D9A3D5FE2AEC293900C0EE20 /* PasswordForgottenView */ = {
+			isa = PBXGroup;
+			children = (
+				D9A3D60E2AEC29FC00C0EE20 /* PasswordForgottenView.swift */,
+			);
+			path = PasswordForgottenView;
+			sourceTree = "<group>";
+		};
+		D9A3D5FF2AEC294000C0EE20 /* PasswordForgottenViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				D9A3D6102AEC2A0600C0EE20 /* PasswordForgottenViewModel.swift */,
+			);
+			path = PasswordForgottenViewModel;
+			sourceTree = "<group>";
+		};
+		D9A3D6002AEC294D00C0EE20 /* SignUpView */ = {
+			isa = PBXGroup;
+			children = (
+				D9A3D5E32AEC270A00C0EE20 /* SignUpView.swift */,
+			);
+			path = SignUpView;
+			sourceTree = "<group>";
+		};
+		D9A3D6012AEC295200C0EE20 /* SignUp */ = {
+			isa = PBXGroup;
+			children = (
+				D9A3D6002AEC294D00C0EE20 /* SignUpView */,
+				D9A3D6022AEC295500C0EE20 /* SignUpViewModel */,
+			);
+			path = SignUp;
+			sourceTree = "<group>";
+		};
+		D9A3D6022AEC295500C0EE20 /* SignUpViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				D9A3D60C2AEC29DF00C0EE20 /* SignUpViewModel.swift */,
+			);
+			path = SignUpViewModel;
+			sourceTree = "<group>";
+		};
+		D9A3D6032AEC295C00C0EE20 /* PasswordNew */ = {
+			isa = PBXGroup;
+			children = (
+				D9A3D6042AEC296400C0EE20 /* PasswordNewView */,
+				D9A3D6052AEC296800C0EE20 /* PasswordNewViewModel */,
+			);
+			path = PasswordNew;
+			sourceTree = "<group>";
+		};
+		D9A3D6042AEC296400C0EE20 /* PasswordNewView */ = {
+			isa = PBXGroup;
+			children = (
+				D9A3D6122AEC2A6B00C0EE20 /* PasswordNewView.swift */,
+			);
+			path = PasswordNewView;
+			sourceTree = "<group>";
+		};
+		D9A3D6052AEC296800C0EE20 /* PasswordNewViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				D9A3D6142AEC2A7800C0EE20 /* PasswordNewViewModel.swift */,
+			);
+			path = PasswordNewViewModel;
+			sourceTree = "<group>";
+		};
+		D9A3D6062AEC296E00C0EE20 /* ReservationConfirmation */ = {
+			isa = PBXGroup;
+			children = (
+				D9A3D6072AEC297400C0EE20 /* ReservationConfirmationView */,
+				D9A3D6082AEC297900C0EE20 /* ReservationConfirmationViewModel */,
+			);
+			path = ReservationConfirmation;
+			sourceTree = "<group>";
+		};
+		D9A3D6072AEC297400C0EE20 /* ReservationConfirmationView */ = {
+			isa = PBXGroup;
+			children = (
+				D9A3D6162AEC2A9900C0EE20 /* ReservationConfirmationView.swift */,
+			);
+			path = ReservationConfirmationView;
+			sourceTree = "<group>";
+		};
+		D9A3D6082AEC297900C0EE20 /* ReservationConfirmationViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				D9A3D6182AEC2AAB00C0EE20 /* ReservationConfirmationViewModel.swift */,
+			);
+			path = ReservationConfirmationViewModel;
+			sourceTree = "<group>";
+		};
+		D9A3D6092AEC298300C0EE20 /* Account */ = {
+			isa = PBXGroup;
+			children = (
+				D9A3D60A2AEC298700C0EE20 /* AccountView */,
+				D9A3D60B2AEC298A00C0EE20 /* AccountViewModel */,
+			);
+			path = Account;
+			sourceTree = "<group>";
+		};
+		D9A3D60A2AEC298700C0EE20 /* AccountView */ = {
+			isa = PBXGroup;
+			children = (
+				D9A3D5EB2AEC273C00C0EE20 /* AccountView.swift */,
+			);
+			path = AccountView;
+			sourceTree = "<group>";
+		};
+		D9A3D60B2AEC298A00C0EE20 /* AccountViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				D9A3D61A2AEC2AD100C0EE20 /* AccountViewModel.swift */,
+			);
+			path = AccountViewModel;
+			sourceTree = "<group>";
+		};
+		D9A3D61C2AEC2AD700C0EE20 /* ReservationList */ = {
+			isa = PBXGroup;
+			children = (
+				D9A3D61D2AEC2AE400C0EE20 /* ReservationListView */,
+				D9A3D61E2AEC2AEE00C0EE20 /* ReservationListViewModel */,
+			);
+			path = ReservationList;
+			sourceTree = "<group>";
+		};
+		D9A3D61D2AEC2AE400C0EE20 /* ReservationListView */ = {
+			isa = PBXGroup;
+			children = (
+				D9A3D5EF2AEC274E00C0EE20 /* ReservationListView.swift */,
+			);
+			path = ReservationListView;
+			sourceTree = "<group>";
+		};
+		D9A3D61E2AEC2AEE00C0EE20 /* ReservationListViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				D9A3D61F2AEC2B1100C0EE20 /* ReservationListViewModel.swift */,
+			);
+			path = ReservationListViewModel;
+			sourceTree = "<group>";
+		};
+		D9A3D6212AEC2B2A00C0EE20 /* ReservationEdit */ = {
+			isa = PBXGroup;
+			children = (
+				D9A3D6222AEC2B3500C0EE20 /* ReservationEditView */,
+				D9A3D6232AEC2B4200C0EE20 /* ReservationEditViewModel */,
+			);
+			path = ReservationEdit;
+			sourceTree = "<group>";
+		};
+		D9A3D6222AEC2B3500C0EE20 /* ReservationEditView */ = {
+			isa = PBXGroup;
+			children = (
+				D9A3D5F12AEC275B00C0EE20 /* ReservationEditView.swift */,
+			);
+			path = ReservationEditView;
+			sourceTree = "<group>";
+		};
+		D9A3D6232AEC2B4200C0EE20 /* ReservationEditViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				D9A3D6242AEC2B6000C0EE20 /* ReservationEditViewModel.swift */,
+			);
+			path = ReservationEditViewModel;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -287,10 +546,27 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D9A3D6192AEC2AAB00C0EE20 /* ReservationConfirmationViewModel.swift in Sources */,
 				D9A3D5E02AEC217300C0EE20 /* User.swift in Sources */,
-				D9A3D5B32AEC1B8000C0EE20 /* ContentView.swift in Sources */,
+				D9A3D6252AEC2B6000C0EE20 /* ReservationEditViewModel.swift in Sources */,
+				D9A3D60D2AEC29DF00C0EE20 /* SignUpViewModel.swift in Sources */,
+				D9A3D5B32AEC1B8000C0EE20 /* HomeView.swift in Sources */,
+				D9A3D6172AEC2A9900C0EE20 /* ReservationConfirmationView.swift in Sources */,
 				D9A3D5B12AEC1B8000C0EE20 /* ReservationAppApp.swift in Sources */,
+				D9A3D5EC2AEC273C00C0EE20 /* AccountView.swift in Sources */,
+				D9A3D6112AEC2A0600C0EE20 /* PasswordForgottenViewModel.swift in Sources */,
+				D9A3D6132AEC2A6B00C0EE20 /* PasswordNewView.swift in Sources */,
+				D9A3D5F22AEC275B00C0EE20 /* ReservationEditView.swift in Sources */,
+				D9A3D6202AEC2B1100C0EE20 /* ReservationListViewModel.swift in Sources */,
+				D9A3D61B2AEC2AD100C0EE20 /* AccountViewModel.swift in Sources */,
 				D9A3D5DE2AEC209A00C0EE20 /* Reservation.swift in Sources */,
+				D9A3D5F72AEC290100C0EE20 /* HomeViewModel.swift in Sources */,
+				D9A3D5E42AEC270A00C0EE20 /* SignUpView.swift in Sources */,
+				D9A3D6152AEC2A7800C0EE20 /* PasswordNewViewModel.swift in Sources */,
+				D9A3D60F2AEC29FC00C0EE20 /* PasswordForgottenView.swift in Sources */,
+				D9A3D5F02AEC274E00C0EE20 /* ReservationListView.swift in Sources */,
+				D9A3D5E22AEC26FC00C0EE20 /* SignInView.swift in Sources */,
+				D9A3D5FC2AEC292B00C0EE20 /* SignInViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
