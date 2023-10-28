@@ -16,8 +16,11 @@ struct SignInView: View {
 
     var body: some View {
         NavigationStack {
+            VStack {
+                Image("Logo")
+                
                 VStack(alignment: .leading) {
-                  
+                    
                     TextComponent(subTitle: "Inscription")
                         .padding(.vertical, 16)
                     TextFieldComponent(title: "Nom")
@@ -31,6 +34,7 @@ struct SignInView: View {
                         destination: AnyView(HomeView())
                     ).padding(.vertical, 16)
                 }.padding()
+            }
         }
     }
 }
