@@ -13,6 +13,7 @@ struct ButtonComponent: View {
     // MARK: Properties
 
     var text: String
+    var colorText: Color?
     var action: (() -> Void)?
     var destination: AnyView?
     var width: CGFloat?
@@ -23,14 +24,16 @@ struct ButtonComponent: View {
 
     init(
         text: String,
+        colorText: Color? = nil,
         action: (() -> Void)? = nil,
         destination: AnyView? = nil,
-        width: CGFloat = .infinity,
-        height: CGFloat = 35,
-        corner: CGFloat = 5,
-        color: Color = .orangeLight
+        width: CGFloat? = nil,
+        height: CGFloat? = nil,
+        corner: CGFloat? = nil,
+        color: Color? = nil
     ) {
         self.text = text
+        self.colorText = colorText
         self.action = action
         self.destination = destination
         self.width = width
@@ -46,11 +49,25 @@ struct ButtonComponent: View {
                 Button {
                     action()
                 } label: {
-                    createButton(text: text, width: width ?? .infinity, height: height ?? 35, corner: corner ?? 5)
+                    createButton(
+                        text: text,
+                        colorText: colorText ?? .white,
+                        width: width ?? .infinity,
+                        height: height ?? 35,
+                        corner: corner ?? 5,
+                        color: color ?? .orangeLight
+                    )
                 }
             } else if let destination = destination {
                 NavigationLink(destination: destination) {
-                    createButton(text: text, width: width ?? .infinity, height: height ?? 35, corner: corner ?? 5)
+                    createButton(
+                        text: text,
+                        colorText: colorText ?? .white,
+                        width: width ?? .infinity,
+                        height: height ?? 35,
+                        corner: corner ?? 5,
+                        color: color ?? .orangeLight
+                    )
                 }
             }
         }
@@ -58,13 +75,20 @@ struct ButtonComponent: View {
     // MARK: - Private Methods
 
     @ViewBuilder
-    private func createButton(text: String, width: CGFloat, height: CGFloat, corner: CGFloat) -> some View {
+    private func createButton(
+        text: String,
+        colorText: Color,
+        width: CGFloat,
+        height: CGFloat,
+        corner: CGFloat,
+        color: Color
+    ) -> some View {
         ZStack {
-            Color.red
+            color
                 .frame(maxWidth: width, maxHeight: height)
                 .cornerRadius(corner)
             Text(text)
-                .foregroundColor(.white)
+                .foregroundColor(colorText)
         }
     }
 }

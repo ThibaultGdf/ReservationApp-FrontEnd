@@ -10,4 +10,5 @@ import SwiftUI
 extension Color {
     static var greenDark = Color("greenDark")
     static var orangeLight = Color("orangeLight")
+    static var beigeLight = Color("beigeLight")
 }
