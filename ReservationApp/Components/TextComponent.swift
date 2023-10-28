@@ -23,7 +23,7 @@ struct TextComponent: View {
         if let title = title {
             Text(title)
                 .fontWeight(.semibold)
-                .foregroundColor(color)
+                .foregroundColor(.greenDark)
                 .font(.system(size: 32))
         } else if let subTitle = subTitle {
             Text(subTitle)

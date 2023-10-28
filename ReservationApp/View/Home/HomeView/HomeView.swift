@@ -18,8 +18,7 @@ struct  HomeView: View {
         NavigationStack {
             VStack(alignment: .leading) {
                 TextComponent(
-                    title: "Réservation",
-                    color: .greenDark
+                    title: "Réservation"
                 )
                 TextComponent(text: "Paragraphe")
                 TextFieldComponent(

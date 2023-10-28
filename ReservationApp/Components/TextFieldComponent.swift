@@ -45,9 +45,12 @@ struct TextFieldComponent: View {
                     .frame(width: width, height: height)
                 HStack {
                     TextField(text ?? "", text: $newText)
+                        .fixedSize()
                         .font(.system(size: 14))
+                       Spacer()
                     Image(icon ?? "")
-                }.padding(.horizontal, 16)
+                        .padding(.horizontal, 16)
+                }.padding(16)
             }
         }
     }

@@ -15,20 +15,20 @@ struct ButtonComponent: View {
     var text: String
     var action: (() -> Void)?
     var destination: AnyView?
-    var width: CGFloat
-    var height: CGFloat
-    var corner: CGFloat
-    var color: Color
+    var width: CGFloat?
+    var height: CGFloat?
+    var corner: CGFloat?
+    var color: Color?
     // MARK: Initialization
 
     init(
         text: String,
         action: (() -> Void)? = nil,
         destination: AnyView? = nil,
-        width: CGFloat,
-        height: CGFloat,
-        corner: CGFloat,
-        color: Color
+        width: CGFloat = .infinity,
+        height: CGFloat = 35,
+        corner: CGFloat = 5,
+        color: Color = .orangeLight
     ) {
         self.text = text
         self.action = action
@@ -46,11 +46,11 @@ struct ButtonComponent: View {
                 Button {
                     action()
                 } label: {
-                    createButton(text: text, width: width, height: height, corner: corner)
+                    createButton(text: text, width: width ?? .infinity, height: height ?? 35, corner: corner ?? 5)
                 }
             } else if let destination = destination {
                 NavigationLink(destination: destination) {
-                    createButton(text: text, width: width, height: height, corner: corner)
+                    createButton(text: text, width: width ?? .infinity, height: height ?? 35, corner: corner ?? 5)
                 }
             }
         }
