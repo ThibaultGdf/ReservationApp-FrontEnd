@@ -72,10 +72,10 @@ struct ButtonComponent: View {
             }
         }
     }
-  
+
     // MARK: - Private Methods
     // swiftlint:disable function_parameter_count
-    
+
     @ViewBuilder
     private func createButton(
         text: String,
@@ -95,4 +95,3 @@ struct ButtonComponent: View {
     }
     // swiftlint:enable function_parameter_count
 }
-

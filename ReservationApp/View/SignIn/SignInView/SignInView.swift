@@ -15,7 +15,23 @@ struct SignInView: View {
     // MARK: Body
 
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        NavigationStack {
+                VStack(alignment: .leading) {
+                  
+                    TextComponent(subTitle: "Inscription")
+                        .padding(.vertical, 16)
+                    TextFieldComponent(title: "Nom")
+                    TextFieldComponent(title: "Prénom")
+                    TextFieldComponent(title: "Téléphone")
+                    TextFieldComponent(title: "Email")
+                    TextFieldComponent(title: "Mot de passe")
+                    TextFieldComponent(title: "Confirmation du mot de passe")
+                    ButtonComponent(
+                        text: "M'inscrire",
+                        destination: AnyView(HomeView())
+                    ).padding(.vertical, 16)
+                }.padding()
+        }
     }
 }
 // MARK: - Preview

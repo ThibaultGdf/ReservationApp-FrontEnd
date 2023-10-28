@@ -22,11 +22,11 @@ struct TextFieldComponent: View {
     // MARK: Initialization
 
     init(
-        title: String?,
-        text: String?,
-        width: CGFloat?,
-        height: CGFloat?,
-        icon: String?
+        title: String? = nil,
+        text: String? = nil,
+        width: CGFloat? = .infinity,
+        height: CGFloat? = 35,
+        icon: String? = nil
     ) {
         self.title = title
         self.text = text
