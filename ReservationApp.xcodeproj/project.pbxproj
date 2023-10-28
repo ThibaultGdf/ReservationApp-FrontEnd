@@ -40,6 +40,7 @@
 		D9A3D6342AEC56F100C0EE20 /* TextComponent.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9A3D6332AEC56F100C0EE20 /* TextComponent.swift */; };
 		D9A3D6362AEC5E5E00C0EE20 /* HeaderComponent.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9A3D6352AEC5E5E00C0EE20 /* HeaderComponent.swift */; };
 		D9A3D6392AED1F6100C0EE20 /* ColorExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9A3D6382AED1F6100C0EE20 /* ColorExtension.swift */; };
+		D9A3D63B2AED3DC000C0EE20 /* LogoComponent.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9A3D63A2AED3DC000C0EE20 /* LogoComponent.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -96,6 +97,7 @@
 		D9A3D6332AEC56F100C0EE20 /* TextComponent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextComponent.swift; sourceTree = "<group>"; };
 		D9A3D6352AEC5E5E00C0EE20 /* HeaderComponent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeaderComponent.swift; sourceTree = "<group>"; };
 		D9A3D6382AED1F6100C0EE20 /* ColorExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorExtension.swift; sourceTree = "<group>"; };
+		D9A3D63A2AED3DC000C0EE20 /* LogoComponent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogoComponent.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -465,6 +467,7 @@
 				D9A3D6312AEC4D7E00C0EE20 /* TextFieldComponent.swift */,
 				D9A3D6332AEC56F100C0EE20 /* TextComponent.swift */,
 				D9A3D6352AEC5E5E00C0EE20 /* HeaderComponent.swift */,
+				D9A3D63A2AED3DC000C0EE20 /* LogoComponent.swift */,
 			);
 			path = Components;
 			sourceTree = "<group>";
@@ -642,6 +645,7 @@
 				D9A3D6302AEC30D600C0EE20 /* ButtonComponent.swift in Sources */,
 				D9A3D6322AEC4D7E00C0EE20 /* TextFieldComponent.swift in Sources */,
 				D9A3D5B12AEC1B8000C0EE20 /* ReservationAppApp.swift in Sources */,
+				D9A3D63B2AED3DC000C0EE20 /* LogoComponent.swift in Sources */,
 				D9A3D5EC2AEC273C00C0EE20 /* AccountView.swift in Sources */,
 				D9A3D62D2AEC300800C0EE20 /* LaunchViewModel.swift in Sources */,
 				D9A3D6112AEC2A0600C0EE20 /* PasswordForgottenViewModel.swift in Sources */,

@@ -15,7 +15,21 @@ struct PasswordNewView: View {
     // MARK: Body
 
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        NavigationStack {
+            VStack {
+                LogoComponent()
+                VStack(alignment: .leading) {
+                    TextComponent(subTitle: "Nouveau mot de passe")
+                        .padding(.vertical, 16)
+                    TextFieldComponent(title: "Mot de passe")
+                    TextFieldComponent(title: "Confirmer mot de passe")
+                    ButtonComponent(
+                        text: "Réinitialiser mon mot de passe",
+                        action: {}
+                    ).padding(.vertical, 16)
+                }.padding()
+            }
+        }
     }
 }
 // MARK: - Preview
