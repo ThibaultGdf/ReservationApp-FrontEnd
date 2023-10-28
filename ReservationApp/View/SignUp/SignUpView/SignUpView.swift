@@ -15,7 +15,28 @@ struct SignUpView: View {
     // MARK: Body
 
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        NavigationStack {
+        VStack {
+            Image("Logo")
+                .resizable()
+                .aspectRatio(contentMode: .fit)
+                .frame(maxWidth: .infinity, maxHeight: 100)
+            VStack(alignment: .leading) {
+                TextComponent(subTitle: "Connectez-vous")
+                    .padding(.vertical, 16)
+                TextFieldComponent(title: "Email")
+                TextFieldComponent(title: "Mot de pass")
+                HStack {
+                    Spacer()
+                    TextComponent(text: "Mot de passe oublié ?")
+                }
+                ButtonComponent(
+                    text: "Me connecter",
+                    destination: AnyView(HomeView())
+                )
+              }.padding()
+            }
+        }
     }
 }
 // MARK: - Preview

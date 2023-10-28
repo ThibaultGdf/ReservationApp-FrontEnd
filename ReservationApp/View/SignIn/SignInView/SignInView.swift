@@ -16,11 +16,9 @@ struct SignInView: View {
 
     var body: some View {
         NavigationStack {
-            VStack {
+            VStack {
                 Image("Logo")
-                
                 VStack(alignment: .leading) {
-                    
                     TextComponent(subTitle: "Inscription")
                         .padding(.vertical, 16)
                     TextFieldComponent(title: "Nom")
