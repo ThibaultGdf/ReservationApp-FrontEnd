@@ -19,7 +19,7 @@ struct  HomeView: View {
             VStack(alignment: .leading) {
                 TextComponent(
                     title: "Réservation",
-                    color: .green
+                    color: .greenDark
                 )
                 TextComponent(text: "Paragraphe")
                 TextFieldComponent(
@@ -66,7 +66,8 @@ struct  HomeView: View {
                     destination: AnyView(ReservationConfirmationView()),
                     width: .infinity,
                     height: 35,
-                    corner: 5
+                    corner: 5,
+                    color: .orangeLight
                 )
                 Spacer()
             }

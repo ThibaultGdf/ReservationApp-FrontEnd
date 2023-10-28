@@ -39,6 +39,7 @@
 		D9A3D6322AEC4D7E00C0EE20 /* TextFieldComponent.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9A3D6312AEC4D7E00C0EE20 /* TextFieldComponent.swift */; };
 		D9A3D6342AEC56F100C0EE20 /* TextComponent.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9A3D6332AEC56F100C0EE20 /* TextComponent.swift */; };
 		D9A3D6362AEC5E5E00C0EE20 /* HeaderComponent.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9A3D6352AEC5E5E00C0EE20 /* HeaderComponent.swift */; };
+		D9A3D6392AED1F6100C0EE20 /* ColorExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9A3D6382AED1F6100C0EE20 /* ColorExtension.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -94,6 +95,7 @@
 		D9A3D6312AEC4D7E00C0EE20 /* TextFieldComponent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextFieldComponent.swift; sourceTree = "<group>"; };
 		D9A3D6332AEC56F100C0EE20 /* TextComponent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextComponent.swift; sourceTree = "<group>"; };
 		D9A3D6352AEC5E5E00C0EE20 /* HeaderComponent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeaderComponent.swift; sourceTree = "<group>"; };
+		D9A3D6382AED1F6100C0EE20 /* ColorExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorExtension.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -147,6 +149,8 @@
 				D9A3D5B02AEC1B8000C0EE20 /* ReservationAppApp.swift */,
 				D9A3D5DC2AEC1D5700C0EE20 /* Model */,
 				D9A3D5DA2AEC1D5200C0EE20 /* View */,
+				D9A3D62E2AEC30BF00C0EE20 /* Components */,
+				D9A3D6372AED1F4B00C0EE20 /* Extensions */,
 				D9A3D5B42AEC1B8300C0EE20 /* Assets.xcassets */,
 				D9A3D5B62AEC1B8300C0EE20 /* Preview Content */,
 			);
@@ -181,7 +185,6 @@
 		D9A3D5DA2AEC1D5200C0EE20 /* View */ = {
 			isa = PBXGroup;
 			children = (
-				D9A3D62E2AEC30BF00C0EE20 /* Components */,
 				D9A3D6272AEC2FCF00C0EE20 /* Launch */,
 				D9A3D5F32AEC277100C0EE20 /* Home */,
 				D9A3D5F82AEC290500C0EE20 /* SignIn */,
@@ -466,6 +469,14 @@
 			path = Components;
 			sourceTree = "<group>";
 		};
+		D9A3D6372AED1F4B00C0EE20 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				D9A3D6382AED1F6100C0EE20 /* ColorExtension.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -638,6 +649,7 @@
 				D9A3D5F22AEC275B00C0EE20 /* ReservationEditView.swift in Sources */,
 				D9A3D6202AEC2B1100C0EE20 /* ReservationListViewModel.swift in Sources */,
 				D9A3D61B2AEC2AD100C0EE20 /* AccountViewModel.swift in Sources */,
+				D9A3D6392AED1F6100C0EE20 /* ColorExtension.swift in Sources */,
 				D9A3D5DE2AEC209A00C0EE20 /* Reservation.swift in Sources */,
 				D9A3D5F72AEC290100C0EE20 /* HomeViewModel.swift in Sources */,
 				D9A3D5E42AEC270A00C0EE20 /* SignUpView.swift in Sources */,

@@ -18,6 +18,7 @@ struct ButtonComponent: View {
     var width: CGFloat
     var height: CGFloat
     var corner: CGFloat
+    var color: Color
     // MARK: Initialization
 
     init(
@@ -26,7 +27,8 @@ struct ButtonComponent: View {
         destination: AnyView? = nil,
         width: CGFloat,
         height: CGFloat,
-        corner: CGFloat
+        corner: CGFloat,
+        color: Color
     ) {
         self.text = text
         self.action = action
@@ -34,6 +36,7 @@ struct ButtonComponent: View {
         self.width = width
         self.height = height
         self.corner = corner
+        self.color = color
     }
     // MARK: Body
 
