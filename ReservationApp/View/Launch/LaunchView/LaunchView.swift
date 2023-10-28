@@ -32,7 +32,7 @@ struct LaunchView: View {
                     destination: AnyView(SignUpView()),
                     color: .beigeLight
                 )
-            }
+            }.padding(.horizontal, 16)
         }
     }
 }
