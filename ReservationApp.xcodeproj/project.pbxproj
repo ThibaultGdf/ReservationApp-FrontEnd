@@ -186,12 +186,12 @@
 			isa = PBXGroup;
 			children = (
 				D9A3D6272AEC2FCF00C0EE20 /* Launch */,
-				D9A3D5F32AEC277100C0EE20 /* Home */,
 				D9A3D5F82AEC290500C0EE20 /* SignIn */,
 				D9A3D6012AEC295200C0EE20 /* SignUp */,
+				D9A3D5F32AEC277100C0EE20 /* Home */,
+				D9A3D6062AEC296E00C0EE20 /* ReservationConfirmation */,
 				D9A3D5FD2AEC293300C0EE20 /* PasswordForgotten */,
 				D9A3D6032AEC295C00C0EE20 /* PasswordNew */,
-				D9A3D6062AEC296E00C0EE20 /* ReservationConfirmation */,
 				D9A3D6092AEC298300C0EE20 /* Account */,
 				D9A3D61C2AEC2AD700C0EE20 /* ReservationList */,
 				D9A3D6212AEC2B2A00C0EE20 /* ReservationEdit */,

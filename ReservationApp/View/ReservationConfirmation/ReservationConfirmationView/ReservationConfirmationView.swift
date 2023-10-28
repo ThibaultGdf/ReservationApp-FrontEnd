@@ -11,11 +11,30 @@ import SwiftUI
 
 struct ReservationConfirmationView: View {
     // MARK: Properties
-
+    @Environment(\.dismiss) var dismiss
     // MARK: Body
 
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        NavigationStack {
+            VStack(alignment: .leading) {
+                TextComponent(title: "Confirmation")
+                TextComponent(text: "Paragraphe")
+                RoundedRectangle(cornerRadius: 0)
+                    .foregroundColor(.gray)
+                    .frame(maxWidth: .infinity, maxHeight: 300, alignment: .center)
+                ButtonComponent(
+                    text: "Back",
+                    action: {
+                    dismiss()
+                })
+                Spacer()
+            }.padding()
+            .toolbar {
+                ToolbarItem(placement: .principal) {
+                    HeaderComponent()
+                }
+            }
+        }
     }
 }
 // MARK: - Preview
