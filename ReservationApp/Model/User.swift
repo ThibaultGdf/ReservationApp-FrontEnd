@@ -15,7 +15,7 @@ struct User: Identifiable {
     let id = UUID()
     var firstName: String
     var lastName: String
-    var phoneNumber: Int
+    var phoneNumber: String
     var email: String
     var password: String
     var confirmationPassword: String
@@ -24,7 +24,7 @@ struct User: Identifiable {
     init(
         firstName: String,
         lastName: String,
-        phoneNumber: Int,
+        phoneNumber: String,
         email: String,
         password: String,
         confirmationPassword: String
