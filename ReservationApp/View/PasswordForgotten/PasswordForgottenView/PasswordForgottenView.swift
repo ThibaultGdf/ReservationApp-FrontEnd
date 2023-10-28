@@ -15,7 +15,22 @@ struct PasswordForgottenView: View {
     // MARK: Body
 
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        NavigationStack {
+            VStack {
+                Image("Logo")
+                    .resizable()
+                    .aspectRatio(contentMode: .fit)
+                    .frame(maxWidth: .infinity, maxHeight: 100)
+                VStack(alignment: .leading) {
+                    TextComponent(subTitle: "J'ai oublié mon mot de passe")
+                    TextFieldComponent(title: "Email")
+                    ButtonComponent(
+                        text: "Réinitialiser mon mot de passe",
+                        action: {}
+                    ).padding(.vertical, 8)
+                }.padding(.vertical, 36)
+            }.padding()
+        }
     }
 }
 // MARK: - Preview
