@@ -15,7 +15,25 @@ struct LaunchView: View {
     // MARK: Body
 
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        NavigationStack {
+            VStack {
+                Image("Logo")
+                    .resizable()
+                    .aspectRatio(contentMode: .fit)
+                    .frame(maxWidth: .infinity, maxHeight: 200)
+                TextComponent(title: "Bienvenue !")
+                ButtonComponent(
+                    text: "M'inscrire",
+                    destination: AnyView(SignInView())
+                )
+                ButtonComponent(
+                    text: "Me connecter",
+                    colorText: .black,
+                    destination: AnyView(SignUpView()),
+                    color: .beigeLight
+                )
+            }
+        }
     }
 }
 // MARK: - Preview
