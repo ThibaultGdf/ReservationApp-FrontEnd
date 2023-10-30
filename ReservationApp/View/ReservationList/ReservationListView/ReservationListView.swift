@@ -12,10 +12,27 @@ import SwiftUI
 struct ReservationListView: View {
     // MARK: Properties
 
+    @Environment(\.dismiss) var dismiss
     // MARK: Body
 
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        NavigationStack {
+            VStack(alignment: .leading) {
+                TextComponent(title: "Mes réservations")
+                TextComponent(subTitle: "À venir :")
+                TextComponent(subTitle: "Historique :")
+                ButtonComponent(
+                    text: "Back",
+                    action: { dismiss() },
+                    color: .red
+                )
+            }.padding()
+            .toolbar {
+                ToolbarItem(placement: .principal) {
+                    HeaderComponent()
+                }
+            }
+        }
     }
 }
 // MARK: - Preview

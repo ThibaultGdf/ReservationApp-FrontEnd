@@ -17,6 +17,8 @@ struct TextComponent: View {
     var text: String?
     var color: Color?
 
+    // MARK: AJOUTER UN SWITCH CASE POUR .TITLE, .SUBTITLE, .PARAGRAPHE.
+
     // MARK: Body
 
     var body: some View {

@@ -41,6 +41,8 @@
 		D9A3D6362AEC5E5E00C0EE20 /* HeaderComponent.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9A3D6352AEC5E5E00C0EE20 /* HeaderComponent.swift */; };
 		D9A3D6392AED1F6100C0EE20 /* ColorExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9A3D6382AED1F6100C0EE20 /* ColorExtension.swift */; };
 		D9A3D63B2AED3DC000C0EE20 /* LogoComponent.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9A3D63A2AED3DC000C0EE20 /* LogoComponent.swift */; };
+		D9A3D63D2AED59BC00C0EE20 /* ReservationComponent.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9A3D63C2AED59BC00C0EE20 /* ReservationComponent.swift */; };
+		D9A3D63F2AEFC02100C0EE20 /* IconComponent.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9A3D63E2AEFC02000C0EE20 /* IconComponent.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -98,6 +100,8 @@
 		D9A3D6352AEC5E5E00C0EE20 /* HeaderComponent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeaderComponent.swift; sourceTree = "<group>"; };
 		D9A3D6382AED1F6100C0EE20 /* ColorExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorExtension.swift; sourceTree = "<group>"; };
 		D9A3D63A2AED3DC000C0EE20 /* LogoComponent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogoComponent.swift; sourceTree = "<group>"; };
+		D9A3D63C2AED59BC00C0EE20 /* ReservationComponent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReservationComponent.swift; sourceTree = "<group>"; };
+		D9A3D63E2AEFC02000C0EE20 /* IconComponent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IconComponent.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -468,6 +472,8 @@
 				D9A3D6332AEC56F100C0EE20 /* TextComponent.swift */,
 				D9A3D6352AEC5E5E00C0EE20 /* HeaderComponent.swift */,
 				D9A3D63A2AED3DC000C0EE20 /* LogoComponent.swift */,
+				D9A3D63C2AED59BC00C0EE20 /* ReservationComponent.swift */,
+				D9A3D63E2AEFC02000C0EE20 /* IconComponent.swift */,
 			);
 			path = Components;
 			sourceTree = "<group>";
@@ -637,6 +643,7 @@
 				D9A3D6192AEC2AAB00C0EE20 /* ReservationConfirmationViewModel.swift in Sources */,
 				D9A3D62B2AEC300000C0EE20 /* LaunchView.swift in Sources */,
 				D9A3D5E02AEC217300C0EE20 /* User.swift in Sources */,
+				D9A3D63D2AED59BC00C0EE20 /* ReservationComponent.swift in Sources */,
 				D9A3D6252AEC2B6000C0EE20 /* ReservationEditViewModel.swift in Sources */,
 				D9A3D60D2AEC29DF00C0EE20 /* SignUpViewModel.swift in Sources */,
 				D9A3D6362AEC5E5E00C0EE20 /* HeaderComponent.swift in Sources */,
@@ -659,6 +666,7 @@
 				D9A3D5E42AEC270A00C0EE20 /* SignUpView.swift in Sources */,
 				D9A3D6152AEC2A7800C0EE20 /* PasswordNewViewModel.swift in Sources */,
 				D9A3D60F2AEC29FC00C0EE20 /* PasswordForgottenView.swift in Sources */,
+				D9A3D63F2AEFC02100C0EE20 /* IconComponent.swift in Sources */,
 				D9A3D5F02AEC274E00C0EE20 /* ReservationListView.swift in Sources */,
 				D9A3D5E22AEC26FC00C0EE20 /* SignInView.swift in Sources */,
 				D9A3D5FC2AEC292B00C0EE20 /* SignInViewModel.swift in Sources */,
