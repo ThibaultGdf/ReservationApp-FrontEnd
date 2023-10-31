@@ -19,6 +19,16 @@ struct User: Identifiable {
     var email: String
     var password: String
     var confirmationPassword: String
+
+    static let emptyUser = User(
+        firstName: "",
+        lastName: "",
+        phoneNumber: "",
+        email: "",
+        password: "",
+        confirmationPassword: ""
+    )
+
     // MARK: Initialization
 
     init(
