@@ -18,6 +18,7 @@ struct Reservation: Identifiable {
     var time = Date()
     var numberOfPersons: Int
     var description: String
+    var user: User
     // MARK: Initialization
 
     init(
@@ -25,12 +26,14 @@ struct Reservation: Identifiable {
         date: Date = Date(),
         time: Date = Date(),
         numberOfPersons: Int,
-        description: String
+        description: String,
+        user: User
     ) {
         self.nameOfReservation = nameOfReservation
         self.date = date
         self.time = time
         self.numberOfPersons = numberOfPersons
         self.description = description
+        self.user = user
     }
 }

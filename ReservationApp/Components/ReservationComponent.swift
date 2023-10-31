@@ -68,7 +68,15 @@ struct ReservationComponent_Previews: PreviewProvider {
                 date: Date(),
                 time: Date(),
                 numberOfPersons: 1,
-                description: ""
+                description: "",
+                user: User(
+                    firstName: "",
+                    lastName: "",
+                    phoneNumber: "",
+                    email: "",
+                    password: "",
+                    confirmationPassword: ""
+                )
             )
         )
     }
