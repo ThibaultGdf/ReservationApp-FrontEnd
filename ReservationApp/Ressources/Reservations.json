@@ -1,0 +1,69 @@
+{
+  "reservations": [
+    {
+      "id": "1",
+      "nameOfReservation": "Réservation 1",
+      "date": "2023-11-01",
+      "time": "15:30:00",
+      "numberOfPersons": 2,
+      "description": "Description de la réservation 1",
+      "user": {
+        "id": "123",
+        "name": "John Doe",
+        "email": "john.doe@example.com"
+      }
+    },
+    {
+      "id": "2",
+      "nameOfReservation": "Réservation 2",
+      "date": "2023-12-10",
+      "time": "18:45:00",
+      "numberOfPersons": 4,
+      "description": "Description de la réservation 2",
+      "user": {
+        "id": "456",
+        "name": "Jane Smith",
+        "email": "jane.smith@example.com"
+      }
+    },
+    {
+      "id": "3",
+      "nameOfReservation": "Réservation 3",
+      "date": "2023-11-15",
+      "time": "12:00:00",
+      "numberOfPersons": 3,
+      "description": "Description de la réservation 3",
+      "user": {
+        "id": "789",
+        "name": "Alice Johnson",
+        "email": "alice.johnson@example.com"
+      }
+    },
+    {
+      "id": "4",
+      "nameOfReservation": "Réservation 4",
+      "date": "2023-12-05",
+      "time": "20:00:00",
+      "numberOfPersons": 1,
+      "description": "Description de la réservation 4",
+      "user": {
+        "id": "101",
+        "name": "Bob Williams",
+        "email": "bob.williams@example.com"
+      }
+    },
+    {
+      "id": "5",
+      "nameOfReservation": "Réservation 5",
+      "date": "2023-11-25",
+      "time": "16:30:00",
+      "numberOfPersons": 5,
+      "description": "Description de la réservation 5",
+      "user": {
+        "id": "202",
+        "name": "Eva Davis",
+        "email": "eva.davis@example.com"
+      }
+    }
+  ]
+}

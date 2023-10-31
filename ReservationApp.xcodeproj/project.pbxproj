@@ -43,6 +43,7 @@
 		D9A3D63B2AED3DC000C0EE20 /* LogoComponent.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9A3D63A2AED3DC000C0EE20 /* LogoComponent.swift */; };
 		D9A3D63D2AED59BC00C0EE20 /* ReservationComponent.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9A3D63C2AED59BC00C0EE20 /* ReservationComponent.swift */; };
 		D9A3D63F2AEFC02100C0EE20 /* IconComponent.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9A3D63E2AEFC02000C0EE20 /* IconComponent.swift */; };
+		D9A3D6422AF11D6000C0EE20 /* Reservations.json in Resources */ = {isa = PBXBuildFile; fileRef = D9A3D6412AF11D6000C0EE20 /* Reservations.json */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -102,6 +103,7 @@
 		D9A3D63A2AED3DC000C0EE20 /* LogoComponent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogoComponent.swift; sourceTree = "<group>"; };
 		D9A3D63C2AED59BC00C0EE20 /* ReservationComponent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReservationComponent.swift; sourceTree = "<group>"; };
 		D9A3D63E2AEFC02000C0EE20 /* IconComponent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IconComponent.swift; sourceTree = "<group>"; };
+		D9A3D6412AF11D6000C0EE20 /* Reservations.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = Reservations.json; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -157,6 +159,7 @@
 				D9A3D5DA2AEC1D5200C0EE20 /* View */,
 				D9A3D62E2AEC30BF00C0EE20 /* Components */,
 				D9A3D6372AED1F4B00C0EE20 /* Extensions */,
+				D9A3D6402AF11D3400C0EE20 /* Ressources */,
 				D9A3D5B42AEC1B8300C0EE20 /* Assets.xcassets */,
 				D9A3D5B62AEC1B8300C0EE20 /* Preview Content */,
 			);
@@ -486,6 +489,14 @@
 			path = Extensions;
 			sourceTree = "<group>";
 		};
+		D9A3D6402AF11D3400C0EE20 /* Ressources */ = {
+			isa = PBXGroup;
+			children = (
+				D9A3D6412AF11D6000C0EE20 /* Reservations.json */,
+			);
+			path = Ressources;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -593,6 +604,7 @@
 			files = (
 				D9A3D5B82AEC1B8300C0EE20 /* Preview Assets.xcassets in Resources */,
 				D9A3D5B52AEC1B8300C0EE20 /* Assets.xcassets in Resources */,
+				D9A3D6422AF11D6000C0EE20 /* Reservations.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
