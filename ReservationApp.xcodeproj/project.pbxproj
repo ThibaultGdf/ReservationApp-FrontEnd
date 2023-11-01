@@ -44,6 +44,7 @@
 		D9A3D63D2AED59BC00C0EE20 /* ReservationComponent.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9A3D63C2AED59BC00C0EE20 /* ReservationComponent.swift */; };
 		D9A3D63F2AEFC02100C0EE20 /* IconComponent.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9A3D63E2AEFC02000C0EE20 /* IconComponent.swift */; };
 		D9A3D6422AF11D6000C0EE20 /* Reservations.json in Resources */ = {isa = PBXBuildFile; fileRef = D9A3D6412AF11D6000C0EE20 /* Reservations.json */; };
+		D9EE53192AF1389A00945697 /* ReadReservationData.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9EE53182AF1389A00945697 /* ReadReservationData.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -104,6 +105,7 @@
 		D9A3D63C2AED59BC00C0EE20 /* ReservationComponent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReservationComponent.swift; sourceTree = "<group>"; };
 		D9A3D63E2AEFC02000C0EE20 /* IconComponent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IconComponent.swift; sourceTree = "<group>"; };
 		D9A3D6412AF11D6000C0EE20 /* Reservations.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = Reservations.json; sourceTree = "<group>"; };
+		D9EE53182AF1389A00945697 /* ReadReservationData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReadReservationData.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -159,6 +161,7 @@
 				D9A3D5DA2AEC1D5200C0EE20 /* View */,
 				D9A3D62E2AEC30BF00C0EE20 /* Components */,
 				D9A3D6372AED1F4B00C0EE20 /* Extensions */,
+				D9EE53172AF1388B00945697 /* Repository */,
 				D9A3D6402AF11D3400C0EE20 /* Ressources */,
 				D9A3D5B42AEC1B8300C0EE20 /* Assets.xcassets */,
 				D9A3D5B62AEC1B8300C0EE20 /* Preview Content */,
@@ -497,6 +500,14 @@
 			path = Ressources;
 			sourceTree = "<group>";
 		};
+		D9EE53172AF1388B00945697 /* Repository */ = {
+			isa = PBXGroup;
+			children = (
+				D9EE53182AF1389A00945697 /* ReadReservationData.swift */,
+			);
+			path = Repository;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -678,6 +689,7 @@
 				D9A3D5E42AEC270A00C0EE20 /* SignUpView.swift in Sources */,
 				D9A3D6152AEC2A7800C0EE20 /* PasswordNewViewModel.swift in Sources */,
 				D9A3D60F2AEC29FC00C0EE20 /* PasswordForgottenView.swift in Sources */,
+				D9EE53192AF1389A00945697 /* ReadReservationData.swift in Sources */,
 				D9A3D63F2AEFC02100C0EE20 /* IconComponent.swift in Sources */,
 				D9A3D5F02AEC274E00C0EE20 /* ReservationListView.swift in Sources */,
 				D9A3D5E22AEC26FC00C0EE20 /* SignInView.swift in Sources */,
