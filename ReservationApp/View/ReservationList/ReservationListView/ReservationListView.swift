@@ -13,12 +13,21 @@ struct ReservationListView: View {
     // MARK: Properties
 
     @Environment(\.dismiss) var dismiss
+
+    @Binding var user: User
+
+    @ObservedObject var readReservationData = ReadReservationData()
     // MARK: Body
 
     var body: some View {
         NavigationStack {
             VStack(alignment: .leading) {
                 TextComponent(title: "Mes réservations")
+
+//                ForEach(readReservationData.reservation) { myReservation in
+//                    ReservationComponent(reservation: myReservation)
+//                }
+
                 TextComponent(subTitle: "À venir :")
                 TextComponent(subTitle: "Historique :")
                 ButtonComponent(
@@ -29,7 +38,7 @@ struct ReservationListView: View {
             }.padding()
             .toolbar {
                 ToolbarItem(placement: .principal) {
-                    HeaderComponent()
+                    HeaderComponent(user: $user)
                 }
             }
         }
@@ -39,6 +48,6 @@ struct ReservationListView: View {
 
 struct ReservationListView_Previews: PreviewProvider {
     static var previews: some View {
-        ReservationListView()
+        ReservationListView(user: .constant(.preview))
     }
 }

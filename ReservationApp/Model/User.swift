@@ -47,3 +47,16 @@ struct User: Identifiable {
         self.confirmationPassword = confirmationPassword
     }
 }
+
+extension User {
+    static var preview: User {
+        User(
+            firstName: "Thibault",
+            lastName: "Godefroy",
+            phoneNumber: "0612345678",
+            email: "preview@gmail.com",
+            password: "password",
+            confirmationPassword: "password"
+        )
+    }
+}

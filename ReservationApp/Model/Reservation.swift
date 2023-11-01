@@ -37,3 +37,23 @@ struct Reservation: Identifiable {
         self.user = user
     }
 }
+
+extension Reservation {
+    static var preview: Reservation {
+        Reservation(
+            nameOfReservation: "Thibault GODEFROY",
+            date: "24/01/2023",
+            time: "19h30",
+            numberOfPersons: 3,
+            description: "Anniversaire Thibault",
+            user: User(
+                firstName: "Thibault",
+                lastName: "Godefroy",
+                phoneNumber: "0782376228",
+                email: "thibaultgodef81@gmail.com",
+                password: "password",
+                confirmationPassword: "password"
+            )
+        )
+    }
+}

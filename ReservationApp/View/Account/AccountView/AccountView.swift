@@ -14,7 +14,7 @@ struct AccountView: View {
 
     @Environment(\.dismiss) var dismiss
 
-    var user: User
+    @Binding var user: User
     // MARK: Body
 
     var body: some View {
@@ -37,7 +37,7 @@ struct AccountView: View {
                 ButtonComponent(
                     text: "Voir mes réservations",
                     colorText: .black,
-                    destination: AnyView(ReservationListView()),
+                    destination: AnyView(ReservationListView(user: $user)),
                     color: .beigeLight
                 )
                 ButtonComponent(
@@ -56,7 +56,7 @@ struct AccountView: View {
             }.padding()
             .toolbar {
                 ToolbarItem(placement: .principal) {
-                    HeaderComponent()
+//                    HeaderComponent()
                 }
             }
         }
@@ -66,15 +66,6 @@ struct AccountView: View {
 
 struct AccountView_Previews: PreviewProvider {
     static var previews: some View {
-        AccountView(
-            user: User(
-                firstName: "Thibault",
-                lastName: "Godefroy",
-                phoneNumber: "06 12 34 56 78",
-                email: "thibault@gmail.com",
-                password: "",
-                confirmationPassword: ""
-            )
-        )
+        AccountView(user: .constant(.preview))
     }
 }

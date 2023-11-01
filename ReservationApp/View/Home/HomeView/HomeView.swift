@@ -12,6 +12,7 @@ import SwiftUI
 struct  HomeView: View {
     // MARK: Properties
 
+    @ObservedObject var viewModel = HomeViewModel()
     // MARK: Body
 
     var body: some View {
@@ -62,7 +63,10 @@ struct  HomeView: View {
                 )
                 ButtonComponent(
                     text: "Je réserve !",
-                    destination: AnyView(ReservationConfirmationView()),
+                    action: {
+//                        addReservation()
+                    },
+                    destination: AnyView(ReservationConfirmationView(user: $viewModel.myUser)),
                     width: .infinity,
                     height: 35,
                     corner: 5,
@@ -72,7 +76,7 @@ struct  HomeView: View {
             }
             .toolbar {
                 ToolbarItem(placement: .principal) {
-                    HeaderComponent()
+                    HeaderComponent(user: $viewModel.myUser)
                 }
             }
             .padding()
