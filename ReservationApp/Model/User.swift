@@ -9,10 +9,10 @@ import Foundation
 
 // MARK: - User
 
-struct User: Identifiable {
+struct User: Identifiable, Decodable {
     // MARK: Properties
 
-    let id = UUID()
+    var id = UUID()
     var firstName: String
     var lastName: String
     var phoneNumber: String

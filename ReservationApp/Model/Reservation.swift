@@ -9,13 +9,13 @@ import Foundation
 
 // MARK: - Reservation
 
-struct Reservation: Identifiable {
+struct Reservation: Identifiable, Decodable {
     // MARK: Properties
 
-    let id = UUID()
+    var id = UUID()
     var nameOfReservation: String
-    var date = Date()
-    var time = Date()
+    var date: String
+    var time: String
     var numberOfPersons: Int
     var description: String
     var user: User
@@ -23,8 +23,8 @@ struct Reservation: Identifiable {
 
     init(
         nameOfReservation: String,
-        date: Date = Date(),
-        time: Date = Date(),
+        date: String,
+        time: String,
         numberOfPersons: Int,
         description: String,
         user: User
