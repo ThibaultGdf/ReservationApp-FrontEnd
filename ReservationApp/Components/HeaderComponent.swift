@@ -21,13 +21,19 @@ struct HeaderComponent: View {
     // MARK: Body
 
     var body: some View {
-        HStack {
-            logo
-            Spacer()
-            person
-            power
-                .padding()
-        }.padding()
+        NavigationStack {
+            HStack {
+                logo
+                Spacer()
+                NavigationLink {
+                    AccountView(user: $user)
+                } label: {
+                    person
+                }
+                power
+                    .padding()
+            }.padding()
+        }
     }
 }
 

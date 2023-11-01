@@ -42,7 +42,7 @@ struct TextFieldComponent: View {
             ZStack(alignment: .leading) {
                 RoundedRectangle(cornerRadius: 5)
                     .stroke(Color.black, lineWidth: 1)
-                    .frame(width: width, height: height)
+                    .frame(maxWidth: width, maxHeight: height)
                 HStack {
                     TextField(text ?? "", text: $newText)
                         .fixedSize()
@@ -59,6 +59,12 @@ struct TextFieldComponent: View {
 
 struct TextFieldComponent_Previews: PreviewProvider {
     static var previews: some View {
-        TextFieldComponent(title: "Title", text: "Email", width: .infinity, height: 40, icon: "icon-clock")
+        TextFieldComponent(
+            title: "Title",
+            text: "Email",
+            width: .infinity,
+            height: 40,
+            icon: "icon-clock"
+        )
     }
 }
