@@ -1,0 +1,77 @@
+[
+    {
+        "nameOfReservation": "Réservation 1",
+        "date": "2023-11-01",
+        "time": "15:30",
+        "numberOfPersons": 2,
+        "description": "Description de la réservation 1",
+        "user": {
+            "firstName": "John",
+            "lastName": "Doe",
+            "phoneNumber": "123-456-7890",
+            "email": "john.doe@example.com",
+            "password": "motdepasse123",
+            "confirmationPassword": "motdepasse123"
+        }
+    },
+    {
+        "nameOfReservation": "Réservation 2",
+        "date": "2023-12-10",
+        "time": "18:45",
+        "numberOfPersons": 4,
+        "description": "Description de la réservation 2",
+        "user": {
+            "firstName": "Jane",
+            "lastName": "Smith",
+            "phoneNumber": "987-654-3210",
+            "email": "jane.smith@example.com",
+            "password": "securepassword",
+            "confirmationPassword": "securepassword"
+        }
+    },
+    {
+        "nameOfReservation": "Réservation 3",
+        "date": "2023-11-15",
+        "time": "12:00",
+        "numberOfPersons": 3,
+        "description": "Description de la réservation 3",
+        "user": {
+            "firstName": "Alice",
+            "lastName": "Johnson",
+            "phoneNumber": "555-123-4567",
+            "email": "alice.johnson@example.com",
+            "password": "secret123",
+            "confirmationPassword": "secret123"
+        }
+    },
+    {
+        "nameOfReservation": "Réservation 4",
+        "date": "2023-12-05",
+        "time": "20:00",
+        "numberOfPersons": 1,
+        "description": "Description de la réservation 4",
+        "user": {
+            "firstName": "Bob",
+            "lastName": "Williams",
+            "phoneNumber": "333-999-8888",
+            "email": "bob.williams@example.com",
+            "password": "mypassword",
+            "confirmationPassword": "mypassword"
+        }
+    },
+    {
+        "nameOfReservation": "Réservation 5",
+        "date": "2023-11-25",
+        "time": "16:30",
+        "numberOfPersons": 5,
+        "description": "Description de la réservation 5",
+        "user": {
+            "firstName": "Eva",
+            "lastName": "Davis",
+            "phoneNumber": "111-222-3333",
+            "email": "eva.davis@example.com",
+            "password": "secure123",
+            "confirmationPassword": "secure123"
+        }
+    }
+]

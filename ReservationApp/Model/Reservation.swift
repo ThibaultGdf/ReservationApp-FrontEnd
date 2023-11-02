@@ -9,7 +9,7 @@ import Foundation
 
 // MARK: - Reservation
 
-struct Reservation: Identifiable, Decodable {
+struct Reservation: Identifiable, Codable, Hashable {
     // MARK: Properties
 
     var id = UUID()
@@ -19,6 +19,11 @@ struct Reservation: Identifiable, Decodable {
     var numberOfPersons: Int
     var description: String
     var user: User
+
+    // MARK: Enumeration
+    enum CodingKeys: String, CodingKey {
+        case nameOfReservation, date, time, numberOfPersons, description, user
+    }
     // MARK: Initialization
 
     init(

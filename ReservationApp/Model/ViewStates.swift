@@ -13,4 +13,5 @@ enum ViewStates {
     case back
     case reservationList
     case deleteAccount
+    case launch
 }

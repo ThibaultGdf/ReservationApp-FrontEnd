@@ -9,7 +9,7 @@ import Foundation
 
 // MARK: - User
 
-struct User: Identifiable, Decodable {
+struct User: Identifiable, Codable, Hashable {
     // MARK: Properties
 
     var id = UUID()
@@ -19,6 +19,11 @@ struct User: Identifiable, Decodable {
     var email: String
     var password: String
     var confirmationPassword: String
+    // MARK: Enumeration
+
+    enum CodingKeys: String, CodingKey {
+        case firstName, lastName, phoneNumber, email, password, confirmationPassword
+    }
 
     static let emptyUser = User(
         firstName: "",
@@ -49,7 +54,7 @@ struct User: Identifiable, Decodable {
 }
 
 extension User {
-    static var preview: User {
+    static var myUser: User {
         User(
             firstName: "Thibault",
             lastName: "Godefroy",

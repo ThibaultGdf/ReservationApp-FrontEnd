@@ -14,9 +14,7 @@ struct ReservationListView: View {
 
     @Environment(\.dismiss) var dismiss
 
-    @Binding var user: User
-
-    @ObservedObject var readReservationData = ReadReservationData()
+    @StateObject var readReservationData = ReadReservationData()
     // MARK: Body
 
     var body: some View {
@@ -24,9 +22,9 @@ struct ReservationListView: View {
             VStack(alignment: .leading) {
                 TextComponent(title: "Mes réservations")
 
-//                ForEach(readReservationData.reservation) { myReservation in
-//                    ReservationComponent(reservation: myReservation)
-//                }
+                ForEach($readReservationData.reservations) { $reservation in
+                    ReservationComponent(reservation: $reservation)
+                }
 
                 TextComponent(subTitle: "À venir :")
                 TextComponent(subTitle: "Historique :")
@@ -49,6 +47,6 @@ struct ReservationListView: View {
 
 struct ReservationListView_Previews: PreviewProvider {
     static var previews: some View {
-        ReservationListView(user: .constant(.preview))
+        ReservationListView()
     }
 }

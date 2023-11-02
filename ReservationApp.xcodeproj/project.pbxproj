@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		D90003212AF3C377001CBAC8 /* ViewStates.swift in Sources */ = {isa = PBXBuildFile; fileRef = D90003202AF3C377001CBAC8 /* ViewStates.swift */; };
+		D926F41A2AF3ACD8003C73F7 /* Reservations.json in Resources */ = {isa = PBXBuildFile; fileRef = D926F4192AF3ACD8003C73F7 /* Reservations.json */; };
 		D9A3D5B12AEC1B8000C0EE20 /* ReservationAppApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9A3D5B02AEC1B8000C0EE20 /* ReservationAppApp.swift */; };
 		D9A3D5B32AEC1B8000C0EE20 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9A3D5B22AEC1B8000C0EE20 /* HomeView.swift */; };
 		D9A3D5B52AEC1B8300C0EE20 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D9A3D5B42AEC1B8300C0EE20 /* Assets.xcassets */; };
@@ -43,8 +45,8 @@
 		D9A3D63B2AED3DC000C0EE20 /* LogoComponent.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9A3D63A2AED3DC000C0EE20 /* LogoComponent.swift */; };
 		D9A3D63D2AED59BC00C0EE20 /* ReservationComponent.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9A3D63C2AED59BC00C0EE20 /* ReservationComponent.swift */; };
 		D9A3D63F2AEFC02100C0EE20 /* IconComponent.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9A3D63E2AEFC02000C0EE20 /* IconComponent.swift */; };
-		D9A3D6422AF11D6000C0EE20 /* Reservations.json in Resources */ = {isa = PBXBuildFile; fileRef = D9A3D6412AF11D6000C0EE20 /* Reservations.json */; };
 		D9EE53192AF1389A00945697 /* ReadReservationData.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9EE53182AF1389A00945697 /* ReadReservationData.swift */; };
+		D9EE531D2AF2968500945697 /* RadioButtonComponent.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9EE531C2AF2968500945697 /* RadioButtonComponent.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -65,6 +67,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		D90003202AF3C377001CBAC8 /* ViewStates.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewStates.swift; sourceTree = "<group>"; };
+		D926F4192AF3ACD8003C73F7 /* Reservations.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = Reservations.json; sourceTree = "<group>"; };
 		D9A3D5AD2AEC1B8000C0EE20 /* ReservationApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ReservationApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D9A3D5B02AEC1B8000C0EE20 /* ReservationAppApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReservationAppApp.swift; sourceTree = "<group>"; };
 		D9A3D5B22AEC1B8000C0EE20 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
@@ -104,8 +108,8 @@
 		D9A3D63A2AED3DC000C0EE20 /* LogoComponent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogoComponent.swift; sourceTree = "<group>"; };
 		D9A3D63C2AED59BC00C0EE20 /* ReservationComponent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReservationComponent.swift; sourceTree = "<group>"; };
 		D9A3D63E2AEFC02000C0EE20 /* IconComponent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IconComponent.swift; sourceTree = "<group>"; };
-		D9A3D6412AF11D6000C0EE20 /* Reservations.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = Reservations.json; sourceTree = "<group>"; };
 		D9EE53182AF1389A00945697 /* ReadReservationData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReadReservationData.swift; sourceTree = "<group>"; };
+		D9EE531C2AF2968500945697 /* RadioButtonComponent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RadioButtonComponent.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -216,6 +220,7 @@
 			children = (
 				D9A3D5DD2AEC209A00C0EE20 /* Reservation.swift */,
 				D9A3D5DF2AEC217300C0EE20 /* User.swift */,
+				D90003202AF3C377001CBAC8 /* ViewStates.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -480,6 +485,7 @@
 				D9A3D63A2AED3DC000C0EE20 /* LogoComponent.swift */,
 				D9A3D63C2AED59BC00C0EE20 /* ReservationComponent.swift */,
 				D9A3D63E2AEFC02000C0EE20 /* IconComponent.swift */,
+				D9EE531C2AF2968500945697 /* RadioButtonComponent.swift */,
 			);
 			path = Components;
 			sourceTree = "<group>";
@@ -495,7 +501,7 @@
 		D9A3D6402AF11D3400C0EE20 /* Ressources */ = {
 			isa = PBXGroup;
 			children = (
-				D9A3D6412AF11D6000C0EE20 /* Reservations.json */,
+				D926F4192AF3ACD8003C73F7 /* Reservations.json */,
 			);
 			path = Ressources;
 			sourceTree = "<group>";
@@ -615,7 +621,7 @@
 			files = (
 				D9A3D5B82AEC1B8300C0EE20 /* Preview Assets.xcassets in Resources */,
 				D9A3D5B52AEC1B8300C0EE20 /* Assets.xcassets in Resources */,
-				D9A3D6422AF11D6000C0EE20 /* Reservations.json in Resources */,
+				D926F41A2AF3ACD8003C73F7 /* Reservations.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -677,11 +683,13 @@
 				D9A3D5B12AEC1B8000C0EE20 /* ReservationAppApp.swift in Sources */,
 				D9A3D63B2AED3DC000C0EE20 /* LogoComponent.swift in Sources */,
 				D9A3D5EC2AEC273C00C0EE20 /* AccountView.swift in Sources */,
+				D90003212AF3C377001CBAC8 /* ViewStates.swift in Sources */,
 				D9A3D62D2AEC300800C0EE20 /* LaunchViewModel.swift in Sources */,
 				D9A3D6112AEC2A0600C0EE20 /* PasswordForgottenViewModel.swift in Sources */,
 				D9A3D6132AEC2A6B00C0EE20 /* PasswordNewView.swift in Sources */,
 				D9A3D5F22AEC275B00C0EE20 /* ReservationEditView.swift in Sources */,
 				D9A3D6202AEC2B1100C0EE20 /* ReservationListViewModel.swift in Sources */,
+				D9EE531D2AF2968500945697 /* RadioButtonComponent.swift in Sources */,
 				D9A3D61B2AEC2AD100C0EE20 /* AccountViewModel.swift in Sources */,
 				D9A3D6392AED1F6100C0EE20 /* ColorExtension.swift in Sources */,
 				D9A3D5DE2AEC209A00C0EE20 /* Reservation.swift in Sources */,
