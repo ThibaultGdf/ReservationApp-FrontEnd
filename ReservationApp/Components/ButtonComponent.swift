@@ -14,62 +14,44 @@ struct ButtonComponent: View {
 
     var text: String
     var colorText: Color?
-    var action: (() -> Void)?
-    var destination: AnyView?
     var width: CGFloat?
     var height: CGFloat?
     var corner: CGFloat?
     var color: Color?
+    var action: (() -> Void)?
     // MARK: Initialization
 
     init(
         text: String,
         colorText: Color? = nil,
-        action: (() -> Void)? = nil,
-        destination: AnyView? = nil,
         width: CGFloat? = nil,
         height: CGFloat? = nil,
         corner: CGFloat? = nil,
-        color: Color? = nil
+        color: Color? = nil,
+        action: @escaping () -> Void
     ) {
         self.text = text
         self.colorText = colorText
-        self.action = action
-        self.destination = destination
         self.width = width
         self.height = height
         self.corner = corner
         self.color = color
+        self.action = action
     }
     // MARK: Body
 
     var body: some View {
-        NavigationStack {
-            if let action = action {
-                Button {
-                    action()
-                } label: {
-                    createButton(
-                        text: text,
-                        colorText: colorText ?? .white,
-                        width: width ?? .infinity,
-                        height: height ?? 35,
-                        corner: corner ?? 5,
-                        color: color ?? .orangeLight
-                    )
-                }
-            } else if let destination = destination {
-                NavigationLink(destination: destination) {
-                    createButton(
-                        text: text,
-                        colorText: colorText ?? .white,
-                        width: width ?? .infinity,
-                        height: height ?? 35,
-                        corner: corner ?? 5,
-                        color: color ?? .orangeLight
-                    )
-                }
-            }
+        Button {
+            action?()
+        } label: {
+            createButton(
+                text: text,
+                colorText: colorText ?? .white,
+                width: width ?? .infinity,
+                height: height ?? 35,
+                corner: corner ?? 5,
+                color: color ?? .orangeLight
+            )
         }
     }
 
@@ -93,5 +75,5 @@ struct ButtonComponent: View {
                 .foregroundColor(colorText)
         }
     }
-    // swiftlint:enable function_parameter_count
 }
+// swiftlint:enable function_parameter_count

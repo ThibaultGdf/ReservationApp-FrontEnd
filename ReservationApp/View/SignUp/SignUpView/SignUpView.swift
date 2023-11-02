@@ -31,9 +31,10 @@ struct SignUpView: View {
                     TextComponent(text: "Mot de passe oublié ?")
                 }
                 ButtonComponent(
-                    text: "Me connecter",
-                    destination: AnyView(HomeView())
-                )
+                    text: "Me connecter"
+                ) {
+
+                }
               }.padding()
             }
         }

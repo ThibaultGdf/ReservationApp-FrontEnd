@@ -28,9 +28,10 @@ struct SignInView: View {
                     TextFieldComponent(title: "Mot de passe")
                     TextFieldComponent(title: "Confirmation du mot de passe")
                     ButtonComponent(
-                        text: "M'inscrire",
-                        destination: AnyView(HomeView())
-                    ).padding(.vertical, 16)
+                        text: "M'inscrire"
+                    ) {
+
+                    }.padding(.vertical, 16)
                 }.padding()
             }
         }

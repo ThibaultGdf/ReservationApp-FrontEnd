@@ -32,13 +32,14 @@ struct ReservationListView: View {
                 TextComponent(subTitle: "Historique :")
                 ButtonComponent(
                     text: "Back",
-                    action: { dismiss() },
-                    color: .red
-                )
+                    color: .orangeLight
+                ) {
+                    dismiss()
+                }
             }.padding()
             .toolbar {
                 ToolbarItem(placement: .principal) {
-                    HeaderComponent(user: $user)
+                    HeaderComponent()
                 }
             }
         }

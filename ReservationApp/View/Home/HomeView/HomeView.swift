@@ -16,7 +16,7 @@ struct  HomeView: View {
     // MARK: Body
 
     var body: some View {
-        NavigationStack {
+//        NavigationStack {
             VStack(alignment: .leading) {
                 TextComponent(
                     title: "Réservation"
@@ -26,8 +26,7 @@ struct  HomeView: View {
                     title: "Nom de la reservation",
                     text: "Pierre Dupont",
                     width: .infinity,
-                    height: 30,
-                    icon: nil
+                    height: 30
                 )
                 HStack {
                     TextFieldComponent(
@@ -50,38 +49,34 @@ struct  HomeView: View {
                         title: "Nombre de personnes",
                         text: "ex: 4",
                         width: 150,
-                        height: 30,
-                        icon: nil
+                        height: 30
                     )
+                    RadioButtonComponent()
                 }
                 TextFieldComponent(
                     title: "Note",
-                    text: nil,
                     width: .infinity,
-                    height: 100,
-                    icon: nil
+                    height: 100
                 )
                 ButtonComponent(
                     text: "Je réserve !",
-                    action: {
-//                        addReservation()
-                    },
-                    destination: AnyView(ReservationConfirmationView(user: $viewModel.myUser)),
                     width: .infinity,
                     height: 35,
                     corner: 5,
                     color: .orangeLight
-                )
+                ) {
+
+                }
                 Spacer()
             }
             .toolbar {
                 ToolbarItem(placement: .principal) {
-                    HeaderComponent(user: $viewModel.myUser)
+                    HeaderComponent()
                 }
             }
             .padding()
         }
-    }
+//    }
 }
 // MARK: - Preview
 

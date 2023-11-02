@@ -37,26 +37,25 @@ struct AccountView: View {
                 ButtonComponent(
                     text: "Voir mes réservations",
                     colorText: .black,
-                    destination: AnyView(ReservationListView(user: $user)),
                     color: .beigeLight
-                )
-                ButtonComponent(
-                    text: "Back",
-                    action: {
-                        dismiss()
-                    }
-                )
+                ) {
+//                    AnyView(ReservationListView())
+                }
+                ButtonComponent(text: "Back") {
+                    dismiss()
+                }
                 ButtonComponent(
                     text: "Supprimer mon compte",
                     colorText: .gray,
-                    action: {},
                     color: .white
-                )
+                ) {
+
+                }
                 Spacer()
             }.padding()
             .toolbar {
                 ToolbarItem(placement: .principal) {
-//                    HeaderComponent()
+                    HeaderComponent()
                 }
             }
         }
@@ -66,6 +65,6 @@ struct AccountView: View {
 
 struct AccountView_Previews: PreviewProvider {
     static var previews: some View {
-        AccountView(user: .constant(.preview))
+        AccountView(user: .constant(.myUser))
     }
 }

@@ -12,6 +12,7 @@ import SwiftUI
 struct LaunchView: View {
     // MARK: Properties
 
+    @StateObject var viewModel = LaunchViewModel()
     // MARK: Body
 
     var body: some View {
@@ -23,15 +24,17 @@ struct LaunchView: View {
                     .frame(maxWidth: .infinity, maxHeight: 200)
                 TextComponent(title: "Bienvenue !")
                 ButtonComponent(
-                    text: "M'inscrire",
-                    destination: AnyView(SignInView())
-                )
+                    text: "M'inscrire"
+                ) {
+
+                }
                 ButtonComponent(
                     text: "Me connecter",
                     colorText: .black,
-                    destination: AnyView(SignUpView()),
                     color: .beigeLight
-                )
+                ) {
+
+                }
             }.padding(.horizontal, 16)
         }
     }
