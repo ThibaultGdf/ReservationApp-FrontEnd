@@ -12,7 +12,7 @@ import SwiftUI
 struct ReservationEditView: View {
     // MARK: Properties
 
-    @Binding var user: User
+    @State private var isOn: Bool = false
     // MARK: Body
 
     var body: some View {
@@ -53,6 +53,7 @@ struct ReservationEditView: View {
                         height: 30,
                         icon: nil
                     )
+                    // RadioButton
                 }
                 TextFieldComponent(
                     title: "Note",
@@ -64,20 +65,18 @@ struct ReservationEditView: View {
                 Spacer()
                 ButtonComponent(
                     text: "Je modifie ma réservation !",
-                    action: {
-//                        addReservation()
-                    },
-                    destination: AnyView(ReservationConfirmationView(user: $user)),
                     width: .infinity,
                     height: 35,
                     corner: 5,
                     color: .orangeLight
-                )
+                ) {
+
+                }
                 Spacer()
             }
             .toolbar {
                 ToolbarItem(placement: .principal) {
-                    HeaderComponent(user: $user)
+                    HeaderComponent()
                 }
             }
             .padding()
@@ -88,6 +87,6 @@ struct ReservationEditView: View {
 
 struct ReservationEditView_Previews: PreviewProvider {
     static var previews: some View {
-        ReservationEditView(user: .constant(.preview))
+        ReservationEditView()
     }
 }

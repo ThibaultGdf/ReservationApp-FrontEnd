@@ -6,3 +6,8 @@
 //
 
 import Foundation
+
+// MARK: - SignInViewModel
+class SignInViewModel: ObservableObject {
+
+}

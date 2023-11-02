@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-// MARK: - ImageComponent
+// MARK: - IconComponent
 
 struct IconComponent: View {
     // MARK: Properties

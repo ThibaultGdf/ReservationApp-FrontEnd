@@ -6,3 +6,11 @@
 //
 
 import Foundation
+
+// MARK: - LaunchViewModel
+
+class LaunchViewModel: ObservableObject {
+   // MARK: Properties
+
+    @Published var viewStates: ViewStates = .launch
+}

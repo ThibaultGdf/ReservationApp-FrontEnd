@@ -12,7 +12,7 @@ import SwiftUI
 struct HeaderComponent: View {
     // MARK: Properties
 
-    @Binding var user: User
+    @State private var user: User = User.myUser
 
     var logo: Image = Image("Logo")
     var person: Image = Image("icon-user")
@@ -39,6 +39,6 @@ struct HeaderComponent: View {
 
 struct HeaderComponent_Previews: PreviewProvider {
     static var previews: some View {
-        HeaderComponent(user: .constant(.preview))
+        HeaderComponent()
     }
 }

@@ -13,7 +13,6 @@ struct ReservationConfirmationView: View {
     // MARK: Properties
 
     @Environment(\.dismiss) var dismiss
-    @Binding var user: User
     // MARK: Body
 
     var body: some View {
@@ -33,7 +32,7 @@ struct ReservationConfirmationView: View {
             }.padding()
             .toolbar {
                 ToolbarItem(placement: .principal) {
-                    HeaderComponent(user: $user)
+                    HeaderComponent()
                 }
             }
         }
@@ -43,6 +42,6 @@ struct ReservationConfirmationView: View {
 
 struct ReservationConfirmationView_Previews: PreviewProvider {
     static var previews: some View {
-        ReservationConfirmationView(user: .constant(.preview))
+        ReservationConfirmationView()
     }
 }

@@ -6,3 +6,7 @@
 //
 
 import Foundation
+
+class HomeViewModel: ObservableObject {
+    @Published var myUser: User = .myUser
+}
