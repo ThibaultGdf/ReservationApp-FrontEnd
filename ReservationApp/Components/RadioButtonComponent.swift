@@ -16,38 +16,42 @@ struct RadioButtonComponent: View {
     @State private var isSalle: Bool = false
     @State private var isOn: Bool = false
 
-    var size: CGFloat = 20
+    let font: Font = .system(size: 18)
+    var size: CGFloat = 25
     var text: String = ""
     // MARK: Body
 
     var body: some View {
         HStack {
-            radioButton(text: "Table", isOn: $isTable)
-            radioButton(text: "Salle", isOn: $isSalle)
+                radioButton(text: "Table", isOn: $isTable, font: font)
+                radioButton(text: "Salle", isOn: $isSalle, font: font)
+            }.padding(.trailing, 16)
         }
-    }
-    func radioButton(text: String, isOn: Binding<Bool>) -> some View {
+    func radioButton(text: String, isOn: Binding<Bool>, font: Font) -> some View {
         Button {
             withAnimation {
                             isOn.wrappedValue.toggle()
                         }
         } label: {
-            ZStack {
-                Circle()
-                    .frame(maxWidth: size, maxHeight: size)
-                    .foregroundColor(.white)
-                    .overlay(
-                        Circle()
-                            .stroke(Color.black, lineWidth: 1)
-                    )
-                if isOn.wrappedValue {
+            HStack {
+                ZStack {
                     Circle()
-                        .frame(maxWidth: size / 2, maxHeight: size / 2)
-                        .foregroundColor(.greenDark)
+                        .frame(maxWidth: size, maxHeight: size)
+                        .foregroundColor(.white)
+                        .overlay(
+                            Circle()
+                                .stroke(Color.black, lineWidth: 1)
+                        )
+                    if isOn.wrappedValue {
+                        Circle()
+                            .frame(maxWidth: size / 2, maxHeight: size / 2)
+                            .foregroundColor(.greenDark)
+                    }
                 }
+                Text(text)
+                    .foregroundColor(.basicColor)
+                    .font(font)
             }
-            TextComponent(text: text)
-                .foregroundColor(.basicColor)
         }
     }
 }
