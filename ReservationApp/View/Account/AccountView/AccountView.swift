@@ -13,6 +13,7 @@ struct AccountView: View {
     // MARK: Properties
 
     @Environment(\.dismiss) var dismiss
+    @ObservedObject var viewModel: LaunchViewModel
 
     @Binding var user: User
     // MARK: Body
@@ -37,12 +38,11 @@ struct AccountView: View {
                 ButtonComponent(
                     text: "Voir mes réservations",
                     colorText: .black,
-                    color: .beigeLight
-                ) {
-//                    AnyView(ReservationListView())
-                }
+                    color: .beigeLight,
+                    destination: AnyView(ReservationListView())
+                )
                 ButtonComponent(text: "Back") {
-                    dismiss()
+                    self.viewModel.viewStates = .home
                 }
                 ButtonComponent(
                     text: "Supprimer mon compte",
@@ -55,7 +55,7 @@ struct AccountView: View {
             }.padding()
             .toolbar {
                 ToolbarItem(placement: .principal) {
-                    HeaderComponent()
+                    HeaderComponent(viewModel: viewModel)
                 }
             }
         }
@@ -65,6 +65,6 @@ struct AccountView: View {
 
 struct AccountView_Previews: PreviewProvider {
     static var previews: some View {
-        AccountView(user: .constant(.myUser))
+        AccountView(viewModel: LaunchViewModel(), user: .constant(.myUser))
     }
 }

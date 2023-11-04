@@ -37,7 +37,7 @@ struct ReservationListView: View {
             }.padding()
             .toolbar {
                 ToolbarItem(placement: .principal) {
-                    HeaderComponent()
+                    HeaderComponent(viewModel: LaunchViewModel())
                 }
             }
         }

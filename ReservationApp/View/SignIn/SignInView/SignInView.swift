@@ -12,6 +12,7 @@ import SwiftUI
 struct SignInView: View {
     // MARK: Properties
 
+    @ObservedObject var viewModel: LaunchViewModel
     // MARK: Body
 
     var body: some View {
@@ -27,11 +28,10 @@ struct SignInView: View {
                     TextFieldComponent(title: "Email")
                     TextFieldComponent(title: "Mot de passe")
                     TextFieldComponent(title: "Confirmation du mot de passe")
-                    ButtonComponent(
-                        text: "M'inscrire"
-                    ) {
-
-                    }.padding(.vertical, 16)
+                    ButtonComponent(text: "M'inscrire") {
+                        self.viewModel.viewStates = .home
+                    }
+                    .padding(.vertical, 16)
                 }.padding()
             }
         }
@@ -41,6 +41,6 @@ struct SignInView: View {
 
 struct SignInView_Previews: PreviewProvider {
     static var previews: some View {
-        SignInView()
+        SignInView(viewModel: LaunchViewModel())
     }
 }

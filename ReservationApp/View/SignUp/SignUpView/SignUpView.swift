@@ -11,7 +11,7 @@ import SwiftUI
 
 struct SignUpView: View {
     // MARK: Properties
-
+    @ObservedObject var viewModel: LaunchViewModel
     // MARK: Body
 
     var body: some View {
@@ -30,10 +30,8 @@ struct SignUpView: View {
                     Spacer()
                     TextComponent(text: "Mot de passe oublié ?")
                 }
-                ButtonComponent(
-                    text: "Me connecter"
-                ) {
-
+                ButtonComponent(text: "Me connecter") {
+                    self.viewModel.viewStates = .home
                 }
               }.padding()
             }
@@ -44,6 +42,6 @@ struct SignUpView: View {
 
 struct SignUpView_Previews: PreviewProvider {
     static var previews: some View {
-        SignUpView()
+        SignUpView(viewModel: LaunchViewModel())
     }
 }

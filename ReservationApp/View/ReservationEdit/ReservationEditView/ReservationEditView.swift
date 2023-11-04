@@ -76,7 +76,7 @@ struct ReservationEditView: View {
             }
             .toolbar {
                 ToolbarItem(placement: .principal) {
-                    HeaderComponent()
+                    HeaderComponent(viewModel: LaunchViewModel())
                 }
             }
             .padding()

@@ -13,6 +13,7 @@ struct ReservationConfirmationView: View {
     // MARK: Properties
 
     @Environment(\.dismiss) var dismiss
+    @ObservedObject var viewModel: LaunchViewModel
     // MARK: Body
 
     var body: some View {
@@ -26,13 +27,13 @@ struct ReservationConfirmationView: View {
                 ButtonComponent(
                     text: "Back",
                     action: {
-                    dismiss()
+                        self.viewModel.viewStates = .back
                 })
                 Spacer()
             }.padding()
             .toolbar {
                 ToolbarItem(placement: .principal) {
-                    HeaderComponent()
+                    HeaderComponent(viewModel: viewModel)
                 }
             }
         }
@@ -42,6 +43,6 @@ struct ReservationConfirmationView: View {
 
 struct ReservationConfirmationView_Previews: PreviewProvider {
     static var previews: some View {
-        ReservationConfirmationView()
+        ReservationConfirmationView(viewModel: LaunchViewModel())
     }
 }

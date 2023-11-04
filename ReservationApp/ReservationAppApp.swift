@@ -11,7 +11,7 @@ import SwiftUI
 struct ReservationAppApp: App {
     var body: some Scene {
         WindowGroup {
-            LaunchView()
+            LaunchView(viewModel: LaunchViewModel())
         }
     }
 }

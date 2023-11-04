@@ -8,10 +8,9 @@
 import Foundation
 
 enum ViewStates {
-    case signIn
-    case signUp
-    case back
-    case reservationList
-    case deleteAccount
     case launch
+    case home
+    case reservationList
+    case confirmation
+    case back
 }

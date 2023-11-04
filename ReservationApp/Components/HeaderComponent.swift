@@ -12,6 +12,8 @@ import SwiftUI
 struct HeaderComponent: View {
     // MARK: Properties
 
+    @ObservedObject var viewModel: LaunchViewModel
+
     @State private var user: User = User.myUser
 
     var logo: Image = Image("Logo")
@@ -23,15 +25,22 @@ struct HeaderComponent: View {
     var body: some View {
         NavigationStack {
             HStack {
-                logo
+                Button {
+                    self.viewModel.viewStates = .home
+                } label: {
+                    logo
+                }
                 Spacer()
                 NavigationLink {
-                    AccountView(user: $user)
+                    AccountView(viewModel: viewModel, user: $user)
                 } label: {
                     person
                 }
-                power
-                    .padding()
+                Button {
+                    self.viewModel.viewStates = .launch
+                } label: {
+                    power
+                }.padding()
             }.padding()
         }
     }
@@ -39,6 +48,6 @@ struct HeaderComponent: View {
 
 struct HeaderComponent_Previews: PreviewProvider {
     static var previews: some View {
-        HeaderComponent()
+        HeaderComponent(viewModel: LaunchViewModel())
     }
 }

@@ -16,26 +16,35 @@ struct LaunchView: View {
     // MARK: Body
 
     var body: some View {
-        NavigationStack {
-            VStack {
-                Image("Logo")
-                    .resizable()
-                    .aspectRatio(contentMode: .fit)
-                    .frame(maxWidth: .infinity, maxHeight: 200)
-                TextComponent(title: "Bienvenue !")
-                ButtonComponent(
-                    text: "M'inscrire"
-                ) {
-
-                }
-                ButtonComponent(
-                    text: "Me connecter",
-                    colorText: .black,
-                    color: .beigeLight
-                ) {
-
-                }
-            }.padding(.horizontal, 16)
+        switch viewModel.viewStates {
+        case .launch:
+            NavigationStack {
+                VStack {
+                    Image("Logo")
+                        .resizable()
+                        .aspectRatio(contentMode: .fit)
+                        .frame(maxWidth: .infinity, maxHeight: 200)
+                    TextComponent(title: "Bienvenue !")
+                    ButtonComponent(
+                        text: "M'inscrire",
+                        destination: AnyView(SignInView(viewModel: viewModel))
+                    )
+                    ButtonComponent(
+                        text: "Me connecter",
+                        colorText: .black,
+                        color: .beigeLight,
+                        destination: AnyView(SignUpView(viewModel: viewModel))
+                    )
+                }.padding(.horizontal, 16)
+            }
+        case .home:
+            HomeView(viewModel: viewModel)
+        case .reservationList:
+            ReservationListView()
+        case .confirmation:
+            ReservationConfirmationView(viewModel: viewModel)
+        case .back:
+            HomeView(viewModel: viewModel)
         }
     }
 }
@@ -43,6 +52,6 @@ struct LaunchView: View {
 
 struct LaunchView_Previews: PreviewProvider {
     static var previews: some View {
-        LaunchView()
+        LaunchView(viewModel: LaunchViewModel())
     }
 }

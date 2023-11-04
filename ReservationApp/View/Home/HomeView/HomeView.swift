@@ -12,76 +12,78 @@ import SwiftUI
 struct  HomeView: View {
     // MARK: Properties
 
-    @ObservedObject var viewModel = HomeViewModel()
+    @StateObject var homeViewModel = HomeViewModel()
+
+    @ObservedObject var viewModel: LaunchViewModel
     // MARK: Body
 
     var body: some View {
-//        NavigationStack {
-            VStack(alignment: .leading) {
-                TextComponent(
-                    title: "Réservation"
-                )
-                TextComponent(text: "Paragraphe")
-                TextFieldComponent(
-                    title: "Nom de la reservation",
-                    text: "Pierre Dupont",
-                    width: .infinity,
-                    height: 30
-                )
-                HStack {
-                    TextFieldComponent(
-                        title: "Date",
-                        text: "07/07/2023",
-                        width: 150,
-                        height: 30,
-                        icon: "icon-calendar"
+            NavigationStack {
+                VStack(alignment: .leading) {
+                    TextComponent(
+                        title: "Réservation"
                     )
+                    TextComponent(text: "Paragraphe")
                     TextFieldComponent(
-                        title: "Heure",
-                        text: "10h15",
-                        width: 150,
-                        height: 30,
-                        icon: "icon-clock"
-                    )
-                }
-                HStack {
-                    TextFieldComponent(
-                        title: "Nombre de personnes",
-                        text: "ex: 4",
-                        width: 150,
+                        title: "Nom de la reservation",
+                        text: "Pierre Dupont",
+                        width: .infinity,
                         height: 30
                     )
-                    RadioButtonComponent()
+                    HStack {
+                        TextFieldComponent(
+                            title: "Date",
+                            text: "07/07/2023",
+                            width: 150,
+                            height: 30,
+                            icon: "icon-calendar"
+                        )
+                        TextFieldComponent(
+                            title: "Heure",
+                            text: "10h15",
+                            width: 150,
+                            height: 30,
+                            icon: "icon-clock"
+                        )
+                    }
+                    HStack {
+                        TextFieldComponent(
+                            title: "Nombre de personnes",
+                            text: "ex: 4",
+                            width: 150,
+                            height: 30
+                        )
+                        RadioButtonComponent()
+                    }
+                    TextFieldComponent(
+                        title: "Note",
+                        width: .infinity,
+                        height: 100
+                    )
+                    ButtonComponent(
+                        text: "Je réserve !",
+                        width: .infinity,
+                        height: 35,
+                        corner: 5,
+                        color: .orangeLight
+                    ) {
+                        self.viewModel.viewStates = .confirmation
+                    }
+                    Spacer()
                 }
-                TextFieldComponent(
-                    title: "Note",
-                    width: .infinity,
-                    height: 100
-                )
-                ButtonComponent(
-                    text: "Je réserve !",
-                    width: .infinity,
-                    height: 35,
-                    corner: 5,
-                    color: .orangeLight
-                ) {
-
+                .toolbar {
+                    ToolbarItem(placement: .principal) {
+                        HeaderComponent(viewModel: viewModel)
+                    }
                 }
-                Spacer()
+                .padding()
             }
-            .toolbar {
-                ToolbarItem(placement: .principal) {
-                    HeaderComponent()
-                }
-            }
-            .padding()
-        }
-//    }
+    }
 }
 // MARK: - Preview
 
 struct  HomeView_Previews: PreviewProvider {
     static var previews: some View {
-        HomeView()
+        HomeView(homeViewModel: HomeViewModel(), viewModel: LaunchViewModel())
     }
 }
