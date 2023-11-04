@@ -40,11 +40,13 @@ struct LaunchView: View {
         case .home:
             HomeView(viewModel: viewModel)
         case .reservationList:
-            ReservationListView()
+            ReservationListView(viewModel: viewModel)
         case .confirmation:
             ReservationConfirmationView(viewModel: viewModel)
         case .back:
             HomeView(viewModel: viewModel)
+        case .profile:
+            AccountView(viewModel: viewModel, user: $viewModel.myUser)
         }
     }
 }

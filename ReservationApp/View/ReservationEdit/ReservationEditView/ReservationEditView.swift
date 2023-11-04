@@ -24,24 +24,17 @@ struct ReservationEditView: View {
                 Spacer()
                 TextFieldComponent(
                     title: "Nom de la reservation",
-                    text: "Pierre Dupont",
-                    width: .infinity,
-                    height: 30,
-                    icon: nil
+                    text: "Pierre Dupont"
                 )
                 HStack {
                     TextFieldComponent(
                         title: "Date",
                         text: "07/07/2023",
-                        width: 150,
-                        height: 30,
                         icon: "icon-calendar"
                     )
                     TextFieldComponent(
                         title: "Heure",
                         text: "10h15",
-                        width: 150,
-                        height: 30,
                         icon: "icon-clock"
                     )
                 }
@@ -49,18 +42,13 @@ struct ReservationEditView: View {
                     TextFieldComponent(
                         title: "Nombre de personnes",
                         text: "ex: 4",
-                        width: 150,
-                        height: 30,
-                        icon: nil
+                        width: 150
                     )
                     // RadioButton
                 }
                 TextFieldComponent(
                     title: "Note",
-                    text: nil,
-                    width: .infinity,
-                    height: 100,
-                    icon: nil
+                    height: 100
                 )
                 Spacer()
                 ButtonComponent(

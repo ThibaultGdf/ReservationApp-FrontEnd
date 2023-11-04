@@ -22,27 +22,22 @@ struct  HomeView: View {
                 VStack(alignment: .leading) {
                     TextComponent(
                         title: "Réservation"
-                    )
-                    TextComponent(text: "Paragraphe")
+                    ).padding(.vertical, 16)
                     TextFieldComponent(
                         title: "Nom de la reservation",
-                        text: "Pierre Dupont",
-                        width: .infinity,
-                        height: 30
-                    )
+                        text: "Pierre Dupont"
+                    ).padding(.vertical, 16)
                     HStack {
                         TextFieldComponent(
                             title: "Date",
                             text: "07/07/2023",
-                            width: 150,
-                            height: 30,
+                            width: 160,
                             icon: "icon-calendar"
                         )
                         TextFieldComponent(
                             title: "Heure",
                             text: "10h15",
-                            width: 150,
-                            height: 30,
+                            width: 170,
                             icon: "icon-clock"
                         )
                     }
@@ -50,16 +45,17 @@ struct  HomeView: View {
                         TextFieldComponent(
                             title: "Nombre de personnes",
                             text: "ex: 4",
-                            width: 150,
-                            height: 30
+                            width: 150
                         )
                         RadioButtonComponent()
-                    }
+                    }.padding(.vertical, 16)
                     TextFieldComponent(
                         title: "Note",
+                        text: "Description",
                         width: .infinity,
                         height: 100
                     )
+                    Spacer()
                     ButtonComponent(
                         text: "Je réserve !",
                         width: .infinity,
@@ -69,7 +65,6 @@ struct  HomeView: View {
                     ) {
                         self.viewModel.viewStates = .confirmation
                     }
-                    Spacer()
                 }
                 .toolbar {
                     ToolbarItem(placement: .principal) {

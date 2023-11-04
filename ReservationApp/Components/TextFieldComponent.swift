@@ -38,7 +38,7 @@ struct TextFieldComponent: View {
 
     var body: some View {
         VStack(alignment: .leading) {
-            TextComponent(text: title)
+            Text(title ?? "")
             ZStack(alignment: .leading) {
                 RoundedRectangle(cornerRadius: 5)
                     .stroke(Color.black, lineWidth: 1)
@@ -50,7 +50,7 @@ struct TextFieldComponent: View {
                        Spacer()
                     Image(icon ?? "")
                         .padding(.horizontal, 16)
-                }.padding(16)
+                }.padding(.horizontal, 16)
             }
         }
     }
@@ -62,8 +62,6 @@ struct TextFieldComponent_Previews: PreviewProvider {
         TextFieldComponent(
             title: "Title",
             text: "Email",
-            width: .infinity,
-            height: 40,
             icon: "icon-clock"
         )
     }

@@ -22,17 +22,17 @@ struct SignUpView: View {
                 .aspectRatio(contentMode: .fit)
                 .frame(maxWidth: .infinity, maxHeight: 100)
             VStack(alignment: .leading) {
-                TextComponent(subTitle: "Connectez-vous")
+                TextComponent(subTitle: "Connectez-vous !")
                     .padding(.vertical, 16)
-                TextFieldComponent(title: "Email")
-                TextFieldComponent(title: "Mot de pass")
+                TextFieldComponent(text: "Email")
+                TextFieldComponent(text: "Mot de passe")
                 HStack {
                     Spacer()
                     TextComponent(text: "Mot de passe oublié ?")
                 }
                 ButtonComponent(text: "Me connecter") {
                     self.viewModel.viewStates = .home
-                }
+                }.padding(.vertical)
               }.padding()
             }
         }

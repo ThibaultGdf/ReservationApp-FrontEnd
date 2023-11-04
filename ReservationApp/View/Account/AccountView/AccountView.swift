@@ -14,6 +14,7 @@ struct AccountView: View {
 
     @Environment(\.dismiss) var dismiss
     @ObservedObject var viewModel: LaunchViewModel
+    @State private var showingSheet: Bool = false
 
     @Binding var user: User
     // MARK: Body
@@ -45,7 +46,7 @@ struct AccountView: View {
                     text: "Voir mes réservations",
                     colorText: .black,
                     color: .beigeLight,
-                    destination: AnyView(ReservationListView())
+                    destination: AnyView(ReservationListView(viewModel: viewModel))
                 )
                 ButtonComponent(text: "Back") {
                     self.viewModel.viewStates = .home

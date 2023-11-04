@@ -15,6 +15,7 @@ struct ReservationListView: View {
     @Environment(\.dismiss) var dismiss
 
     @StateObject var readReservationData = ReadReservationData()
+    @ObservedObject var viewModel: LaunchViewModel
     // MARK: Body
 
     var body: some View {
@@ -23,7 +24,7 @@ struct ReservationListView: View {
                 TextComponent(title: "Mes réservations")
 
                 ForEach($readReservationData.reservations) { $reservation in
-                    ReservationComponent(reservation: $reservation)
+                    ReservationComponent(reservation: $reservation, viewModel: viewModel)
                 }
 
                 TextComponent(subTitle: "À venir :")
@@ -47,6 +48,6 @@ struct ReservationListView: View {
 
 struct ReservationListView_Previews: PreviewProvider {
     static var previews: some View {
-        ReservationListView()
+        ReservationListView(viewModel: LaunchViewModel())
     }
 }

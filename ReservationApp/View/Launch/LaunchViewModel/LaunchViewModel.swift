@@ -13,4 +13,5 @@ class LaunchViewModel: ObservableObject {
    // MARK: Properties
 
     @Published var viewStates: ViewStates = .launch
+    @Published var myUser: User = .myUser
 }

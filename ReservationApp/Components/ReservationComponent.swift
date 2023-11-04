@@ -49,6 +49,6 @@ struct ReservationComponent: View {
 
 struct ReservationComponent_Previews: PreviewProvider {
     static var previews: some View {
-        ReservationComponent(reservation: .constant(.preview))
+        ReservationComponent(reservation: .constant(.preview), viewModel: LaunchViewModel())
     }
 }

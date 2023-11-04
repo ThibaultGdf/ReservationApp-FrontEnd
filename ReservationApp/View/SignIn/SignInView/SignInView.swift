@@ -22,16 +22,16 @@ struct SignInView: View {
                 VStack(alignment: .leading) {
                     TextComponent(subTitle: "Inscription")
                         .padding(.vertical, 16)
-                    TextFieldComponent(title: "Nom")
-                    TextFieldComponent(title: "Prénom")
-                    TextFieldComponent(title: "Téléphone")
-                    TextFieldComponent(title: "Email")
-                    TextFieldComponent(title: "Mot de passe")
-                    TextFieldComponent(title: "Confirmation du mot de passe")
+                    TextFieldComponent(title: "", text: "Nom de famille")
+                    TextFieldComponent(title: "", text: "Prénom")
+                    TextFieldComponent(title: "", text: "Téléphone")
+                    TextFieldComponent(title: "", text: "Email")
+                    TextFieldComponent(title: "", text: "Mot de passe")
+                    TextFieldComponent(title: "", text: "Confirmation du mot de passe")
                     ButtonComponent(text: "M'inscrire") {
                         self.viewModel.viewStates = .home
                     }
-                    .padding(.vertical, 16)
+                    .padding(.vertical, 8)
                 }.padding()
             }
         }
