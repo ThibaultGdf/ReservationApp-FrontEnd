@@ -13,6 +13,8 @@ struct ReservationComponent: View {
     // MARK: Properties
 
     @Binding var reservation: Reservation
+    @ObservedObject var viewModel: LaunchViewModel
+    @State private var showingSheet: Bool = false
 
     var width: CGFloat?
     var height: CGFloat?
@@ -32,10 +34,13 @@ struct ReservationComponent: View {
                     TextComponent(text: "Salle")
                     HStack {
                         Spacer()
-                        NavigationLink {
-//                            ReservationEditView()
+                        // sheet
+                        Button {
+                            showingSheet.toggle()
                         } label: {
                             IconComponent(icon: "pencil", color: .greenDark)
+                        }.sheet(isPresented: $showingSheet) {
+                            ReservationEditView()
                         }
                             IconComponent(icon: "xmark.bin", color: .red)
                                 .padding(.horizontal, 16)

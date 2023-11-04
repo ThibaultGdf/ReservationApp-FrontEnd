@@ -12,7 +12,7 @@ import SwiftUI
 struct ReservationEditView: View {
     // MARK: Properties
 
-    @State private var isOn: Bool = false
+    @Environment(\.dismiss) var dismiss
     // MARK: Body
 
     var body: some View {
@@ -62,12 +62,27 @@ struct ReservationEditView: View {
                 }
                 Spacer()
             }
+            .padding()
             .toolbar {
+                ToolbarItem(placement: .navigationBarLeading) {
+                    Button {
+                        self.dismiss()
+                    } label: {
+                        Text("Fermer")
+                    }
+                }
                 ToolbarItem(placement: .principal) {
-                    HeaderComponent(viewModel: LaunchViewModel())
+                        Text("Modifier")
+                }
+                ToolbarItem(placement: .navigationBarTrailing) {
+                    Button {
+                        self.dismiss()
+                        // UPDATE
+                    } label: {
+                        Text("Enregistrer")
+                    }
                 }
             }
-            .padding()
         }
     }
 }

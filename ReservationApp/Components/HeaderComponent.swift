@@ -15,6 +15,7 @@ struct HeaderComponent: View {
     @ObservedObject var viewModel: LaunchViewModel
 
     @State private var user: User = User.myUser
+    @State private var isProfileButtonClicked: Bool = false
 
     var logo: Image = Image("Logo")
     var person: Image = Image("icon-user")
@@ -31,11 +32,14 @@ struct HeaderComponent: View {
                     logo
                 }
                 Spacer()
-                NavigationLink {
-                    AccountView(viewModel: viewModel, user: $user)
+                Button {
+                    if !isProfileButtonClicked {
+                        isProfileButtonClicked = true
+                        self.viewModel.viewStates = .profile
+                    }
                 } label: {
                     person
-                }
+                }.disabled(isProfileButtonClicked)
                 Button {
                     self.viewModel.viewStates = .launch
                 } label: {
