@@ -18,6 +18,7 @@ struct ButtonComponent: View {
     var height: CGFloat?
     var corner: CGFloat?
     var color: Color?
+    var destination: AnyView?
     var action: (() -> Void)?
     // MARK: Initialization
 
@@ -28,7 +29,8 @@ struct ButtonComponent: View {
         height: CGFloat? = nil,
         corner: CGFloat? = nil,
         color: Color? = nil,
-        action: @escaping () -> Void
+        destination: AnyView? = nil,
+        action: (() -> Void)? = nil
     ) {
         self.text = text
         self.colorText = colorText
@@ -36,22 +38,38 @@ struct ButtonComponent: View {
         self.height = height
         self.corner = corner
         self.color = color
+        self.destination = destination
         self.action = action
     }
     // MARK: Body
 
     var body: some View {
-        Button {
-            action?()
-        } label: {
-            createButton(
-                text: text,
-                colorText: colorText ?? .white,
-                width: width ?? .infinity,
-                height: height ?? 35,
-                corner: corner ?? 5,
-                color: color ?? .orangeLight
-            )
+        NavigationStack {
+            if let action = action {
+                Button {
+                    action()
+                } label: {
+                    createButton(
+                        text: text,
+                        colorText: colorText ?? .white,
+                        width: width ?? .infinity,
+                        height: height ?? 35,
+                        corner: corner ?? 5,
+                        color: color ?? .orangeLight
+                    )
+                }
+            } else if let destination = destination {
+                NavigationLink(destination: destination) {
+                    createButton(
+                        text: text,
+                        colorText: colorText ?? .white,
+                        width: width ?? .infinity,
+                        height: height ?? 35,
+                        corner: corner ?? 5,
+                        color: color ?? .orangeLight
+                    )
+                }
+            }
         }
     }
 
