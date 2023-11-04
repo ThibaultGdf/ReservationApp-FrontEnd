@@ -24,7 +24,13 @@ struct AccountView: View {
                 HStack {
                     TextComponent(title: "Mon compte")
                     Spacer()
-                    Image("icon-pencil")
+                    Button {
+                        showingSheet.toggle()
+                    } label: {
+                        Image("icon-pencil")
+                    }.sheet(isPresented: $showingSheet) {
+                        AccountEditView(viewModel: viewModel, user: $viewModel.myUser)
+                    }
                 }
                 Text("Prénom : \(user.firstName)")
                     .padding(.vertical)

@@ -12,5 +12,6 @@ enum ViewStates {
     case home
     case reservationList
     case confirmation
+    case profile
     case back
 }

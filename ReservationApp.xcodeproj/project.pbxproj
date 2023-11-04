@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		D90003212AF3C377001CBAC8 /* ViewStates.swift in Sources */ = {isa = PBXBuildFile; fileRef = D90003202AF3C377001CBAC8 /* ViewStates.swift */; };
 		D926F41A2AF3ACD8003C73F7 /* Reservations.json in Resources */ = {isa = PBXBuildFile; fileRef = D926F4192AF3ACD8003C73F7 /* Reservations.json */; };
+		D92BA2382AF65A8A00A2E271 /* AccountEditView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D92BA2372AF65A8A00A2E271 /* AccountEditView.swift */; };
 		D9A3D5B12AEC1B8000C0EE20 /* ReservationAppApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9A3D5B02AEC1B8000C0EE20 /* ReservationAppApp.swift */; };
 		D9A3D5B32AEC1B8000C0EE20 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9A3D5B22AEC1B8000C0EE20 /* HomeView.swift */; };
 		D9A3D5B52AEC1B8300C0EE20 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D9A3D5B42AEC1B8300C0EE20 /* Assets.xcassets */; };
@@ -69,6 +70,7 @@
 /* Begin PBXFileReference section */
 		D90003202AF3C377001CBAC8 /* ViewStates.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewStates.swift; sourceTree = "<group>"; };
 		D926F4192AF3ACD8003C73F7 /* Reservations.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = Reservations.json; sourceTree = "<group>"; };
+		D92BA2372AF65A8A00A2E271 /* AccountEditView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountEditView.swift; sourceTree = "<group>"; };
 		D9A3D5AD2AEC1B8000C0EE20 /* ReservationApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ReservationApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D9A3D5B02AEC1B8000C0EE20 /* ReservationAppApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReservationAppApp.swift; sourceTree = "<group>"; };
 		D9A3D5B22AEC1B8000C0EE20 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
@@ -137,6 +139,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		D92BA2362AF65A7B00A2E271 /* AccountEdit */ = {
+			isa = PBXGroup;
+			children = (
+				D92BA2372AF65A8A00A2E271 /* AccountEditView.swift */,
+			);
+			path = AccountEdit;
+			sourceTree = "<group>";
+		};
 		D9A3D5A42AEC1B8000C0EE20 = {
 			isa = PBXGroup;
 			children = (
@@ -209,6 +219,7 @@
 				D9A3D5FD2AEC293300C0EE20 /* PasswordForgotten */,
 				D9A3D6032AEC295C00C0EE20 /* PasswordNew */,
 				D9A3D6092AEC298300C0EE20 /* Account */,
+				D92BA2362AF65A7B00A2E271 /* AccountEdit */,
 				D9A3D61C2AEC2AD700C0EE20 /* ReservationList */,
 				D9A3D6212AEC2B2A00C0EE20 /* ReservationEdit */,
 			);
@@ -680,6 +691,7 @@
 				D9A3D6172AEC2A9900C0EE20 /* ReservationConfirmationView.swift in Sources */,
 				D9A3D6302AEC30D600C0EE20 /* ButtonComponent.swift in Sources */,
 				D9A3D6322AEC4D7E00C0EE20 /* TextFieldComponent.swift in Sources */,
+				D92BA2382AF65A8A00A2E271 /* AccountEditView.swift in Sources */,
 				D9A3D5B12AEC1B8000C0EE20 /* ReservationAppApp.swift in Sources */,
 				D9A3D63B2AED3DC000C0EE20 /* LogoComponent.swift in Sources */,
 				D9A3D5EC2AEC273C00C0EE20 /* AccountView.swift in Sources */,
